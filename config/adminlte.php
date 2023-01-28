@@ -194,7 +194,7 @@ return [
     'classes_content' => '',
     'classes_sidebar' => 'sidebar-dark-primary elevation-4',
     'classes_sidebar_nav' => '',
-    'classes_topnav' => 'navbar-light navbar-light',
+    'classes_topnav' => 'navbar-light navbar-dark',
     'classes_topnav_nav' => 'navbar-expand',
     'classes_topnav_container' => 'container',
 
@@ -211,7 +211,7 @@ return [
     */
 
     'sidebar_mini' => 'lg',
-    'sidebar_collapse' => false,
+    'sidebar_collapse' =>false,
     'sidebar_collapse_auto_size' => false,
     'sidebar_collapse_remember' => false,
     'sidebar_collapse_remember_no_transition' => true,
@@ -253,7 +253,7 @@ return [
     */
 
     'use_route_url' => false,
-    'dashboard_url' => 'home',
+    'dashboard_url' => '/',
     'logout_url' => 'logout',
     'login_url' => 'login',
     'register_url' => 'register',
@@ -292,11 +292,19 @@ return [
     'menu' => [
         // Navbar items:
         [
-            'type'         => 'navbar-search',
-            'text'         => 'search',
+            'text' => 'link',
+            'url'  => '#',
             'topnav_right' => true,
         ],
+
         [
+            'type'         => 'navbar-search',
+            'text'         => 'Busqueda',
+            'topnav_right' => true,
+        ],
+
+        [
+            
             'type'         => 'fullscreen-widget',
             'topnav_right' => true,
         ],
@@ -312,26 +320,32 @@ return [
             'can'  => 'manage-blog',
         ],
         [
-            'text' => 'HOME',
+            'text' => 'MENU PRINCIPAL',
             'url'  => 'menuPrincipal',
-            'icon'    => 'fa fa-fw fa-home',
+            'icon'    => 'fa fa-bars',
         ],
         //************* Inicio de menu de modulo de usuarios ***************/
         [
             'text'    => 'Usuarios',
-            'url'  => 'usuarios',
-            'icon'    => 'fas fa-fw fa-user',
+            'url'     => 'usuarios',
+            'icon'    => 'fa fa-users',
+            'icon_color'=> '',
             'submenu' => [
                 [
-                    'text' => 'Menu',
+                    'text' => 'Lista usuarios',
                     'url'  => 'menu_usuario',
-                    'icon'    => 'fa-solid fa-user',
+                    
                 ],   
                              
                 [
-                    'text' => '',
-                    'url'  => '',
-                    'icon' => '',
+                    'text' => 'Crear Usuarios',
+                    'url'  => 'menu_usuario',
+                    
+                ],
+                [
+                    'text' => 'Rol Usuarios',
+                    'url'  => 'menu_usuario',
+                   
                 ],
             ],
         ],
@@ -341,18 +355,29 @@ return [
         //***************inicio de menu de modulo ventas****************/
         [
             'text'    => 'Ventas',
-            'icon'    => 'fa fa-fw fa-home',
+            'icon'    => 'fa fa-credit-card',
+            'icon_color'=> '',
             'submenu' => [
                 [
-                    'text' => 'Inventario',
-                    'url'  => 'inventario',
-                    'icon'    => '',
+                    'text' => 'Cliente nuevo',
+                    'url'  => '',
+                    
                 ],   
                              
                 [
-                    'text' => 'Entradas',
-                    'url'  => 'entradas',
-                    'icon'    => 'fa fa-fw fa-arrow-left',
+                    'text' => 'Facturacion',
+                    'url'  => '',
+                   
+                ],
+                [
+                    'text' => 'Buscar Ventas',
+                    'url'  => '',
+                    
+                ],
+                [
+                    'text' => 'Reportes',
+                    'url'  => '',
+                    
                 ],
             ],
         ],
@@ -361,14 +386,35 @@ return [
 //**************************inicio de menu modulo inventario***************/
         [
             'text'    => 'Inventario',
-            'url'  => 'menu_inventario',
-            'icon'    => 'fa fa-fw fa-box',
+            'url'     => 'menu_inventario',
+            'icon'    => 'fa fa-boxes',
+            'icon_color'=> '',
             'submenu' => [
                 [
-                    'text' => 'Menu',
+                    'text' => 'Entradas',
                     'url'  => 'menu_inventario',
-                    'icon'    => '',
+                    
                 ],   
+                [
+                    'text' => 'Salidas',
+                    'url'  => 'menu_inventario',
+                    
+                ],   
+                [
+                    'text' => 'Productos',
+                    'url'  => 'menu_inventario',
+                    
+                ],   
+                [
+                    'text' => 'Toma de inventario',
+                    'url'  => 'menu_inventario',
+                    
+                ],  
+                [
+                    'text' => 'Movimientos',
+                    'url'  => 'menu_inventario',
+                    
+                ],    
             ],
         ],
 //**************************fin de menu modulo inventario***************/
@@ -376,18 +422,19 @@ return [
 //**************************inicio de menu modulo logistica***************/
          [
             'text'    => 'Logistica',
-            'icon'    => 'fa fa-fw fa-box',
+            'icon'    => 'fa fa-truck fast',
+            'icon_color'=> '',
             'submenu' => [
                 [
-                    'text' => 'Inventario',
-                    'url'  => 'inventario',
-                    'icon'    => 'fa fa-fw fa-box',
+                    'text' => 'Submenu 1',
+                    'url'  => '#',
+                    
                 ],   
                              
                 [
-                    'text' => 'Entradas',
-                    'url'  => 'entradas',
-                    'icon'    => 'fa fa-fw fa-arrow-left',
+                    'text' => 'Submenu 2',
+                    'url'  => '#',
+                    
                 ],
             ],
         ],
@@ -396,18 +443,19 @@ return [
 //**************************inicio de menu modulo dashboard***************/
   [
             'text'    => 'Operaciones',
-            'icon'    => 'fa fa-fw fa-box',
+            'icon'    => 'fa fa-network-wired',
+            'icon_color'=> '',
             'submenu' => [
                 [
-                    'text' => 'Inventario',
-                    'url'  => 'inventario',
-                    'icon'    => 'fa fa-fw fa-box',
+                    'text' => 'Submenu 1',
+                    'url'  => '#',
+                    
                 ],   
                              
                 [
-                    'text' => 'Entradas',
-                    'url'  => 'entradas',
-                    'icon'    => 'fa fa-fw fa-arrow-left',
+                    'text' => 'Submenu 2',
+                    'url'  => '#',
+                    
                 ],
             ],
         ],
@@ -415,18 +463,19 @@ return [
 
 [
     'text'    => 'Dashboard',
-    'icon'    => 'fa fa-fw fa-box',
+    'icon'    => 'fa fa-chart-line',
+    'icon_color'=> '',
     'submenu' => [
         [
-            'text' => 'Inventario',
-            'url'  => 'inventario',
-            'icon'    => 'fa fa-fw fa-box',
+            'text' => 'Submenu 1',
+            'url'  => '#',
+            
         ],   
                      
         [
-            'text' => 'Entradas',
-            'url'  => 'entradas',
-            'icon'    => 'fa fa-fw fa-arrow-left',
+            'text' => 'Submenu 2',
+            'url'  => '#',
+            
         ],
     ],
 ],
@@ -438,12 +487,14 @@ return [
             'label'       => 4,
             'label_color' => 'success',
         ],
-        ['header' => 'account_settings'],
+        ['header' => 'CONFIGURACION DE CUENTA'],
         [
-            'text' => 'profile',
-            'url'  => 'admin/settings',
+            'text' => 'Usuarios',
+            'url'  => 'admin/usuarios',
             'icon' => 'fas fa-fw fa-user',
         ],
+        
+        
         [
             'text' => 'change_password',
             'url'  => 'admin/settings',

@@ -3,75 +3,83 @@
 @section('title', 'DASHBOARD')
 
 @section('content_header')
-    <h1>DASHBOARD</h1>
+
+<div class="iconPrincipal">
+  <img src="./img/aplicacion.png">
+  <p>Menu Principal</p>
+</div>
 @stop
 
 @section('content')
-    <p>DASHBOARD EN ELABORACION .....</p>
+<div class=" container" id="contenedorPrincipal">
 
-    <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <h5 class="card-title">Primary card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
+  <a href="./usuarios">
+    <div class="col">
+      <div class="card " style="max-width: 20rem;" id="principal">
+        <div class="card-header" id="header">USUARIOS</div>
+        <div class="card-body" id="bodyUsuario">
+          <i class="fa fa-users"></i>
+        </div>
+  </a>
 </div>
-<div class="card text-bg-secondary mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <h5 class="card-title">Secondary card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+<a href="./ventas">
+  <div class="card " style="max-width: 20rem;" id="principal">
+    <div class="card-header" id="header">VENTAS</div>
+    <div class="card-body" id="bodyVentas">
+      <i class="fa fa-credit-card"></i>
+    </div>
   </div>
-</div>
-<div class="card text-bg-success mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <h5 class="card-title">Success card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+</a>
+
+<a href="./inventarioNew">
+  <div class="card " style="max-width: 20rem;" id="principal">
+    <div class="card-header" id="header">INVENTARIO</div>
+    <div class="card-body" id="bodyInventario">
+      <i class="fa fa-boxes"></i>
+    </div>
   </div>
-</div>
-<div class="card text-bg-danger mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <h5 class="card-title">Danger card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
-</div>
-<div class="card text-bg-warning mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <h5 class="card-title">Warning card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+</a>
+
+<a href="./menu_inventario">
+  <div class="col">
+    <div class="card " style="max-width: 20rem;" id="principal">
+      <div class="card-header" id="header">LOGISTICA</div>
+      <div class="card-body" id="bodyLogistica">
+        <i class="fa fa-truck fast"></i>
+      </div>
+    </div>
+</a>
+
+<a href="./menu_inventario">
+  <div class="card " style="max-width: 20rem;" id="principal">
+    <div class="card-header" id="header">OPERACIONES</div>
+    <div class="card-body" id="bodyOperaciones">
+      <i class="fa fa-network-wired"></i>
+    </div>
   </div>
-</div>
-<div class="card text-bg-info mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <h5 class="card-title">Info card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+</a>
+
+<a href="./dashboard">
+  <div class="card " style="max-width: 20rem;" id="principal">
+    <div class="card-header" id="header">DASHBOARD</div>
+    <div class="card-body" id="bodyDashboard">
+      <i class="fa fa-chart-line"></i>
+    </div>
   </div>
+</a>
 </div>
-<div class="card text-bg-light mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <h5 class="card-title">Light card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
 </div>
-<div class="card text-bg-dark mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <h5 class="card-title">Dark card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
 </div>
-    
 @stop
 
 @section('css')
-    <link rel="stylesheet" href="/css/admin_custom.css">
+<link rel="stylesheet" href="/css/admin_custom.css">
 @stop
 
 @section('js')
-    <script> console.log('Hi!'); </script>
+<script>
+  console.log('Hi!');
+</script>
 @stop

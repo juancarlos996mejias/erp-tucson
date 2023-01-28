@@ -162,7 +162,7 @@ height: 100%;
 
 
 #bgRegistro{
-    background: #D8D9CF;    
+    background: #473C33;    
 }
 
 #containerLogin{
@@ -202,6 +202,25 @@ height: 100%;
     margin-bottom: 40px;
 }
 
+#modalBody{
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+#modalBody button{
+    margin: 30px;
+    height: 50px;
+    background: #EDEDED;
+}
+
+#modalFooter{
+    height: 40px;
+}
+
+
+
 .modal-body img{
     justify-content: center;
     padding: 10px;
@@ -211,13 +230,13 @@ height: 100%;
 
 
 .modal-body{
-    background: #576F72;
+    background: #393E46;
     
 }
 
 .modal-title{
     font-family:'Roboto Mono', monospace;  
-    color: #5F7161;  
+    color: #181818;  
 }
 
 .modal-body p{
@@ -245,13 +264,15 @@ height: 100%;
 #nuevoImg{
     color: #5F7161;
     margin-right: 30px;
-    
+    height: 50px;
+    width: 50px;
     
    
 }
 
 #nuevoImg2{
-    height: 90px;
+    height: 70px;
+    width: 70px;
 }
 
 
@@ -288,18 +309,22 @@ height: 100%;
 
 #username{
     width: 120px;
-    height: 33px;
+    height: 40px;
 }
 
 #password{
     width: 120px;
-    height: 33px;
+    height: 40px;
 }
 
 #basic-addon1{
-    height: 33px;
+    height: 40px;
     padding: 10px;
     width: 45px;
+}
+
+#basic-addon1 i{
+  margin-top: 10px;
 }
 
 
@@ -347,7 +372,8 @@ justify-content: center;
 }
 
 .nav-link i{
-    font-size: 30px;
+    font-size: 25px;
+    
 }
 
 .navbar-brand{
@@ -380,7 +406,7 @@ justify-content: center;
     width: 300px;
     font-family: 'poppins', sans-serif;
     font-size: 16px;
-    border-radius: 8px;
+    
     cursor: pointer;
     color: whitesmoke;
     background-size: 300%;
@@ -388,10 +414,7 @@ justify-content: center;
      
 }
 
-.card:hover{
-    left: -2.5%;
-    color:#161a17;
-}
+
 
 
 
@@ -405,6 +428,29 @@ justify-content: center;
     height: 25px;
     padding: 10px;
 }
+
+.cardNew{
+    margin-left: 50px;
+    height: 210px;
+    width: 240px;
+   background: #FFE15D;
+   border-radius: 5px;
+   
+}
+
+.cardNew img{
+    margin-top: 10px;
+    height: 70px;
+    width: 70px;
+}
+
+.cardNew:hover{
+box-shadow: 20px 20px 80px -44px #000;
+transition: .5s ease-in-out;
+cursor: pointer;
+}
+
+
 
 
 .subcard {
@@ -611,6 +657,7 @@ margin-left: 390px;
 
 #tituloRegistro{
     color: #161a17;
+    font-size: 60PX;
 }
 
 #botoRegistro{
@@ -782,7 +829,7 @@ font-size: 25px;
 }
 
 #eliminar{
-    color:whitesmoke;
+    color:#CC3636;
     cursor: pointer;
     font-size: 20px;
 }
@@ -815,6 +862,19 @@ font-size: 25px;
 #login{
     background: #393E46;
 }
+
+
+
+#iconoInventario i{
+    font-size:  100px;
+    margin-left: 60px;
+    margin-top: 10px; 
+}
+
+
+
+
+
     
 
 

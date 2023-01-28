@@ -41,7 +41,7 @@
             <div style="font-size: 0.9rem"> Recordar contraseña</div>
           </div>
           <div>
-            <a href="./registro_usuario2" class="text-decoration-none text-dark fw-semibold fst-italic">Registrarme?</a>
+            <a href="./registro_usuario" class="text-decoration-none text-dark fw-semibold fst-italic">Registrarme?</a>
           </div>
         </div>
         <br>
