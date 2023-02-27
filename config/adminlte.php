@@ -333,7 +333,7 @@ return [
             'submenu' => [
                 [
                     'text' => 'Lista usuarios',
-                    'url'  => 'menu_usuario',
+                    'url'  => 'usuarios',
                     
                 ],   
                              

@@ -16,6 +16,15 @@
 
 
   <body class=" contenedorLogin">
+
+  @auth
+<p><h3>Bienvenido al System Tucson</h3></p>
+  @endauth
+
+  @guest
+  <p>Para Ingresar inicia sesion<a href="/login"></a></p>
+  @endguest
+    
     <div class="contenedor d-flex justify-content-center aling-items-center " style="height:490px">
       <div class="p-5 mt-4 text-dark rounded-2" style="width:25rem" id="containerLogin">
         <div class="d-flex justify-content-center">
@@ -25,14 +34,17 @@
           Login
         </div>
 
+
+        <form action="/login" method="POST">
+        @csrf
         <div class="input-group mb-3">
           <span class="input-group-text" id="basic-addon1"> <i class="fa-solid fa-user"></i></span>
-          <input id="username" type="text" name="usuario" class="form-control" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1">
+          <input id="username" type="text" name="username" class="form-control" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1">
         </div>
 
         <div class="input-group mb-3">
           <span class="input-group-text" id="basic-addon1"> <i class="fa-solid fa-lock"></i></span>
-          <input id="password" type="text" name="contraseña" class="form-control" placeholder="Contraseña" aria-label="Username" aria-describedby="basic-addon1">
+          <input id="password" type="password" name="password" class="form-control" placeholder="Contraseña" aria-label="Username" aria-describedby="basic-addon1">
         </div>
 
         <div class="d-flex justify-content-around mt-4">
@@ -41,18 +53,20 @@
             <div style="font-size: 0.9rem"> Recordar contraseña</div>
           </div>
           <div>
-            <a href="./registro_usuario" class="text-decoration-none text-dark fw-semibold fst-italic">Registrarme?</a>
+            <a href="./register" class="text-decoration-none text-dark fw-semibold fst-italic">Registrarme?</a>
           </div>
         </div>
         <br>
 
-        <div class="btn btn-secondary text-white fw-semibold shadow-sm w-100 mt-4" id="login">ENTRAR</div>
-
+        <input type="submit" value="ENTRAR"class="btn btn-secondary text-white fw-semibold shadow-sm w-100 mt-4" id="login"></div>
+  
+        </form>
 
       </div>
     </div>
     </div>
-
+    
+  
     
 
   </body>

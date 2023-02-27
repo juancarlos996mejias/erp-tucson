@@ -74,14 +74,14 @@
     </div>
     </div>
 
-    <span class="placeholder col-12 bg-secondary"></span>
+    <hr>
 
     <div class="container py-5">
 <div class="row">
 
-    <table class=" table table-dark table-hover"id="tableListar"style="width:100%">
+    <table class="table table-striped table-hover" id="datatableNew"style="width:100%">
         <thead>
-            <tr class="table-primary">
+            <tr class="table-dark">
                 <th scope="col">Fecha de Registro</th>
                 <th scope="col">N° de Documento</th>
                 <th scope="col">Usuario Registrado</th>
@@ -187,7 +187,11 @@
 
    
 
-
+<script>
+        $(document).ready(function() {
+            $('#datatableNew').DataTable();
+        });
+    </script>
 
 </body>
 

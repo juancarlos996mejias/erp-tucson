@@ -5,7 +5,7 @@
         </div>
         <div class="logo" id="logoTucson">
             <img src="./img/logoBlue.png" alt="" style="width: 20%;">
-            <a class="navbar-brand" href="menuPrincipal">ERP TUCSON</a>
+            <a class="navbar-brand" href="menuPrincipal"id=headerNew>ERP TUCSON</a>
         </div>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -30,7 +30,7 @@
                         <a class="nav-link" aria-current="page" href="./menu_principal">MENU</a>
                     </li>
                 <?php } else { ?>
-                    <li class="nav-item"><a class="nav-link" href="./login"><i class="fa-solid fa-power-off"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" id=headerNew href="./login"><i class="fa-solid fa-power-off"></i></a></li>
                 <?php } ?>
 
             </ul>

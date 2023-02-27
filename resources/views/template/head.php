@@ -21,12 +21,16 @@
         <script type="text/javascript" src="js/login.js"></script>
         <script type="text/javascript" src="js/menu.js"></script> 
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.2/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href=https://fonts.google.com/share?selection.family=Roboto%20Mono:wght@100">
         <link type="text/css" rel="stylesheet" href="assets/jquery-ui-1.11.4.custom/jquery-ui.min.css"/>
         <link type="text/css" rel="stylesheet" href="assets/DataTables-1.10.7/css/jquery.dataTables.css"/>
         <link type="text/css" rel="stylesheet" href="css/datatable.css"/>
-
+<script defer src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script defer src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+<script defer src="https://cdn.datatables.net/1.13.2/js/dataTables.bootstrap5.min.js"></script>
+<script defer src="js/menu.js"></script> 
         <title>INVENTORY</title>
        <link rel="stylesheet" href="scss/custom.css">
         <script type="text/javascript">

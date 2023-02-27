@@ -1,7 +1,12 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\homeController;
+use Illuminate\Support\Facades\Route;
+
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -15,17 +20,35 @@ use App\Http\Controllers\homeController;
 */
 
 
+Route::get('/', function () {
+    return view('home.index');
+});
 
-Route::get('/', HomeController::class);
-    
+
+
+Route::get('/register',[RegisterController::class,'show']);
+
+Route::post('/register', [RegisterController::class, 'register']); 
+
+
+Route::get('/login',[LoginController::class,'show']);
+
+Route::post('/login',[LoginController::class,'login']);
+
+Route::get('/home',[homeController::class,'index']);
+
+Route::get('/menu',[homeController::class,'menuPrincipal']);
+
+
+
 
 
 Route::get('/login', function () {
-    return view('login');
+    return view('registro.login');
 });
 
 Route::get('/menuPrincipal', function () {
-    return view('menuPrincipal');
+    return view('menu.menuPrincipal');
 });
 
 
@@ -51,47 +74,53 @@ Route::get('/ventas', function () {
     return view('ventas');
 });
 
-Route::get('/toma_inventario', function () {
-    return view('toma_inventario');
+
+
+//inventario_Entradas
+
+Route::get('/entradasNuevo', function () {
+    return view('inventario.entradasNuevo');
 });
 
-Route::get('/inventario_entradas', function () {
-    return view('inventario_entradas');
+Route::get('/entradasListar', function () {
+    return view('inventario.entradasListar');
 });
 
-Route::get('/listar_entradas', function () {
-    return view('listar_entradas');
-});
-
-Route::get('/inventario', function () {
-    return view('inventario');
-});
-
-Route::get('/inventario_salidas', function () {
-    return view('inventario_salidas');
-});
-
-Route::get('/listar_salidas', function () {
-    return view('listar_salidas');
+Route::get('/entradasBuscar', function () {
+    return view('inventario.entradasBuscar');
 });
 
 
+//inventario_salidas
 
-Route::get('/registro_usuario', function () {
-    return view('registro_usuario');
+Route::get('/salidasNuevo', function () {
+    return view('inventario.salidasNuevo');
 });
+
+Route::get('/salidasListar', function () {
+    return view('inventario.salidasListar');
+});
+
+Route::get('/salidasBuscar', function () {
+    return view('inventario.salidasBuscar');
+});
+
+
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('dashboard.dashboard');
 });
 
 Route::get('/inventarioNew', function () {
     return view('inventarioNew');
 });
 
-Route::get('/inventario_listar', function () {
-    return view('inventario_listar');
+
+
+Route::get('/register', function () {
+    return view('registro.register');
 });
+
 
 
 

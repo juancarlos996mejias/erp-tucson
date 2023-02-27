@@ -4,7 +4,7 @@
 
 <head>
     <?php include(app_path() . "/../resources/views/template/head.php"); ?>
-    <script type="text/javascript" src="js/inventario.js"></script>
+    <script type="text/javascript" src="js/inventarioNew.js"></script>
 </head>
 
 <body>

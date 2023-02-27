@@ -72,10 +72,10 @@
         <br>
 
 
-
-    <table class=" table table-striped table-hover table-primary mt-4">
+        <div class="container py-5">
+    <table class= "table table-striped table-hover" id="datatableNew"style="width:100%">
         <thead>
-            <tr class="table-primary">
+            <tr class="table-dark">
                 <th scope="col">Fecha Registro</th>
                 <th scope="col">N° Documento</th>
                 <th scope="col">Usuario Registrado</th>
@@ -85,12 +85,25 @@
                 <th scope="col">Descripcion Articulo</th>
                 <th scope="col">Categoria Articulo</th>
                 <th scope="col">Almacen</th>
+                
 
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th scope="row"></th>
+                <th scope="row">0001</th>
+                <td>Ilva 45x90 Calacata</td>
+                <td>1104</td>
+                <td>Pisos y Porcelanatos</td>
+                <td>Talar</td>
+                <td>600</td>
+                <td>250</td>
+                <td>350</td>
+                <td>100</td>
+                
+            </tr>
+            <tr>
+                <th scope="row">0001</th>
                 <td>0001</td>
                 <td>Ilva 45x90 Calacata</td>
                 <td>1104</td>
@@ -102,24 +115,51 @@
                 <td>100</td>
             </tr>
             <tr>
-                <th scope="row"></th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <th scope="row">0001</th>
+                <td>0001</td>
+                <td>Ilva 45x90 Calacata</td>
+                <td>1104</td>
+                <td>Pisos y Porcelanatos</td>
+                <td>Talar</td>
+                <td>600</td>
+                <td>250</td>
+                <td>350</td>
+                <td>100</td>
             </tr>
             <tr>
-                <th scope="row"></th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <th scope="row">0001</th>
+                <td>0001</td>
+                <td>Ilva 45x90 Calacata</td>
+                <td>1104</td>
+                <td>Pisos y Porcelanatos</td>
+                <td>Talar</td>
+                <td>600</td>
+                <td>250</td>
+                <td>350</td>
+                <td>100</td>
             </tr>
+            <tr>
+                <th scope="row">0001</th>
+                <td>0001</td>
+                <td>Ilva 45x90 Calacata</td>
+                <td>1104</td>
+                <td>Pisos y Porcelanatos</td>
+                <td>Talar</td>
+                <td>600</td>
+                <td>250</td>
+                <td>350</td>
+                <td>100</td>
+            </tr>
+          
 
 
     </table>
-
-
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('#datatableNew').DataTable();
+        });
+    </script>
 </body>
 
 </html>

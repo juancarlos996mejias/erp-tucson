@@ -69,6 +69,7 @@ color:#222831;
 }
 
 #bodyListar{
+   
     padding: 40px;
     background: #FF6E31;
     
@@ -242,8 +243,13 @@ margin-bottom: 90px;
 }
 
 
+
+
 .containerUsuario{
-    margin-bottom: 40px;
+    display: flex;
+    margin-top: 100px;
+   margin-left: 80px;
+  
 } 
 
 #tituloRegistro{

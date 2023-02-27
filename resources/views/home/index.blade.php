@@ -6,17 +6,10 @@
 <body class="homeBg"id="indexBg"style= "height:100%">
 
 
-
-
-
-
 <header>
     <?php include(app_path()."/../resources/views/template/header.php");?>
 </header>
 
-
-
-  
 
 
         <div class="d-flex justify-content-center align-items-center"id="bgHome">
@@ -27,16 +20,6 @@
         </div>
 
         
-
-
-
-
-
-
-
-
-    
-
 
         <footer class="py-4 mt-4"id="bgfooterLogin">
         <?php include(app_path() . "/../resources/views/template/footer.php"); ?>

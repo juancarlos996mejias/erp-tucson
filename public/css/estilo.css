@@ -382,6 +382,14 @@ justify-content: center;
     color:#ffffff;  
 }
 
+#headerNew{
+    font-family:'Roboto Mono', monospace;  
+    font-size: 25px;  
+    color:#ffffff;     
+}
+
+
+
 .fecha_registro{
     margin-left: 175px;
 }
@@ -596,6 +604,7 @@ margin-left: 390px;
 
 #contenedorGuardar{
     margin-top: 60px;
+    
 }
 
 #contenedorObservaciones{
@@ -606,7 +615,7 @@ margin-left: 390px;
     height: 40px;
     padding: 20px;
     width: 140px;
-    background: #4B7BE5;
+    background: #434242;
 
 }
 
@@ -834,9 +843,11 @@ font-size: 25px;
     font-size: 20px;
 }
 
-#guardar{
-    font-size: 30px;
-    color: black;
+#guardar i{
+    font-size: 60px;
+    color: #ffffff;
+    
+    
 }
 
 .containerIcons i{

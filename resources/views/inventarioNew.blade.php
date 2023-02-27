@@ -131,9 +131,9 @@
                 </div>
 
                 <div class="modal-body" id="modalBody">
-                <a href="./inventario_entradas"><button type="button" class="btn" data-bs-dismiss="modal">Nuevo</button></a>
-                <a href="./inventario_listar"><button type="button" class="btn">Listar </button></a>
-                <a href="./inventario_entradas"><button type="button" class="btn">Buscar</button></a>
+                <a href="./entradasNuevo"><button type="button" class="btn" data-bs-dismiss="modal">Nuevo</button></a>
+                <a href="./entradasListar"><button type="button" class="btn">Listar </button></a>
+                <a href="./entradasBuscar"><button type="button" class="btn">Buscar</button></a>
                 </div>
                 <div class="modal-footer" id="modalFooter">
                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
@@ -155,9 +155,9 @@
                 </div>
 
                 <div class="modal-body" id="modalBody">
-                <a href="./inventario_entradas"><button type="button" class="btn" data-bs-dismiss="modal">Nuevo</button></a>
-                <a href="./inventario_entradas"> <button type="button" class="btn">Listar </button></a>
-                <a href="./inventario_entradas"><button type="button" class="btn">Buscar</button></a>
+                <a href="./salidasNuevo"><button type="button" class="btn" data-bs-dismiss="modal">Nuevo</button></a>
+                <a href="./salidasListar"> <button type="button" class="btn">Listar </button></a>
+                <a href="./salidasBuscar"><button type="button" class="btn">Buscar</button></a>
                 </div>
 
                 <div class="modal-footer" id="modalFooter">

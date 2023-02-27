@@ -17,8 +17,8 @@
 <br>
 <br>
 
-<div class="d-flex justify-content-around ">
-  <div class=" containerUsuario py-4"id="usuarios">
+<div class="d-flex">
+  <div class=" containerUsuario"id="usuarios">
     <a href="./usuarios">
       <div class="card text">
         <div class="card-header">LISTAR</div>
@@ -29,7 +29,8 @@
     </a>
   </div>
 
-  <div class=" container py-4">
+  <div class=" containerUsuario"id="usuarios">
+  <div class=" container">
     <a href="./usuarios">
       <div class="card text">
         <div class="card-header">CREAR</div>
@@ -39,8 +40,10 @@
       </div>
     </a>
   </div>
+  </div>
 
-  <div class=" container py-4">
+  <div class=" containerUsuario"id="usuarios">
+  <div class=" container">
     <a href="./usuarios">
       <div class="card text">
         <div class="card-header">ROL</div>
@@ -50,6 +53,7 @@
       </div>
   </div>
   </a>
+</div>
 </div>
 
 
