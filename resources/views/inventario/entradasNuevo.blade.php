@@ -134,7 +134,9 @@
                     <th scope="col">Cantidad</th>
                     <th scope="col">Sub Total</th>
                     <th scope="col">img Articulo</th>
-
+                    <th scope="col">Acciones</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
                 </tr>
             </thead>
             <tbody>
@@ -145,6 +147,12 @@
                     <td>420.000</td>
                     <td>280.000</td>
                     <td><img class="imagen" src="./img/ceramicos/alberdi.webp"></td>
+                    <th scope="col"><button type="button" class="btn btn-success">Crear</button>
+                    </th>
+                    <th scope="col"><button type="button" class="btn btn-warning">Editar</button>
+                    </th>
+                    <th scope="col"><button type="button" class="btn btn-danger">Eliminar</button>
+                    </th>
 
                 </tr>
                 <tr>
@@ -154,7 +162,11 @@
                     <td>420.000<img class="imagen" src=""></td>
                     <td>280.000</td>
                     <td><img class="imagen" src="./img/ceramicos/klaukol-red.jpg"></td>
-
+                    <th scope="col"><button type="button" class="btn btn-success">Crear</button>
+                    <th scope="col"><button type="button" class="btn btn-warning">Editar</button>
+                    </th>
+                    <th scope="col"><button type="button" class="btn btn-danger">Eliminar</button>
+                    </th>
                 </tr>
                 <tr>
                     <th scope="row">000003</th>
@@ -163,7 +175,11 @@
                     <td>420.000<img class="imagen" src=""></td>
                     <td>280.000</td>
                     <td><img class="imagen" src="./img/ceramicos/klaukol-red.jpg"></td>
-
+                    <th scope="col"><button type="button" class="btn btn-success">Crear</button>
+                    <th scope="col"><button type="button" class="btn btn-warning">Editar</button>
+                    </th>
+                    <th scope="col"><button type="button" class="btn btn-danger">Eliminar</button>
+                    </th>
                 </tr>
                 <tr>
                     <th scope="row">000004</th>
@@ -172,7 +188,11 @@
                     <td>420.000<img class="imagen" src=""></td>
                     <td>280.000</td>
                     <td><img class="imagen" src="./img/ceramicos/black.webp"></td>
-
+                    <th scope="col"><button type="button" class="btn btn-success">Crear</button>
+                    <th scope="col"><button type="button" class="btn btn-warning">Editar</button>
+                    </th>
+                    <th scope="col"><button type="button" class="btn btn-danger">Eliminar</button>
+                    </th>
                 </tr>
                 <tr>
                     <th scope="row">000005</th>
@@ -181,7 +201,11 @@
                     <td>420.000<img class="imagen" src=""></td>
                     <td>280.000</td>
                     <td><img class="imagen" src="./img/ceramicos/murano1.jpg"></td>
-
+                    <th scope="col"><button type="button" class="btn btn-success">Crear</button>
+                    <th scope="col"><button type="button" class="btn btn-warning">Editar</button>
+                    </th>
+                    <th scope="col"><button type="button" class="btn btn-danger">Eliminar</button>
+                    </th>
                 </tr>
                 <tr>
                     <th scope="row">000006</th>
@@ -190,7 +214,11 @@
                     <td>420.000<img class="imagen" src=""></td>
                     <td>280.000</td>
                     <td><img class="imagen" src="./img/ceramicos/piazza-bacha.jpg"></td>
-
+                    <th scope="col"><button type="button" class="btn btn-success">Crear</button>
+                    <th scope="col"><button type="button" class="btn btn-warning">Editar</button>
+                    </th>
+                    <th scope="col"><button type="button" class="btn btn-danger">Eliminar</button>
+                    </th>
                 </tr>
                 <tr>
                     <th scope="row">000001</th>
@@ -199,7 +227,11 @@
                     <td>420.000<img class="imagen" src=""></td>
                     <td>280.000</td>
                     <td><img class="imagen" src="./img/ceramicos/klaukol-verde.jpg"></td>
-
+                    <th scope="col"><button type="button" class="btn btn-success">Crear</button>
+                    <th scope="col"><button type="button" class="btn btn-warning">Editar</button>
+                    </th>
+                    <th scope="col"><button type="button" class="btn btn-danger">Eliminar</button>
+                    </th>
                 </tr>
                 <tr>
                     <th scope="row">000001</th>
@@ -208,7 +240,11 @@
                     <td>420.000</td>
                     <td>280.000</td>
                     <td><img class="imagen" src="./img/ceramicos/alberdi.webp"></td>
-
+                    <th scope="col"><button type="button" class="btn btn-success">Crear</button>
+                    <th scope="col"><button type="button" class="btn btn-warning">Editar</button>
+                    </th>
+                    <th scope="col"><button type="button" class="btn btn-danger">Eliminar</button>
+                    </th>
                 </tr>
                 <tr>
                     <th scope="row">000002</th>
@@ -217,7 +253,11 @@
                     <td>420.000<img class="imagen" src=""></td>
                     <td>280.000</td>
                     <td><img class="imagen" src="./img/ceramicos/klaukol-red.jpg"></td>
-
+                    <th scope="col"><button type="button" class="btn btn-success">Crear</button>
+                    <th scope="col"><button type="button" class="btn btn-warning">Editar</button>
+                    </th>
+                    <th scope="col"><button type="button" class="btn btn-danger">Eliminar</button>
+                    </th>
                 </tr>
                 <tr>
                     <th scope="row">000003</th>
@@ -226,7 +266,11 @@
                     <td>420.000<img class="imagen" src=""></td>
                     <td>280.000</td>
                     <td><img class="imagen" src="./img/ceramicos/klaukol-red.jpg"></td>
-
+                    <th scope="col"><button type="button" class="btn btn-success">Crear</button>
+                    <th scope="col"><button type="button" class="btn btn-warning">Editar</button>
+                    </th>
+                    <th scope="col"><button type="button" class="btn btn-danger">Eliminar</button>
+                    </th>
                 </tr>
                 <tr>
                     <th scope="row">000004</th>
@@ -235,7 +279,11 @@
                     <td>420.000<img class="imagen" src=""></td>
                     <td>280.000</td>
                     <td><img class="imagen" src="./img/ceramicos/black.webp"></td>
-
+                    <th scope="col"><button type="button" class="btn btn-success">Crear</button>
+                    <th scope="col"><button type="button" class="btn btn-warning">Editar</button>
+                    </th>
+                    <th scope="col"><button type="button" class="btn btn-danger">Eliminar</button>
+                    </th>
                 </tr>
                 <tr>
                     <th scope="row">000005</th>
@@ -244,7 +292,11 @@
                     <td>420.000<img class="imagen" src=""></td>
                     <td>280.000</td>
                     <td><img class="imagen" src="./img/ceramicos/murano1.jpg"></td>
-
+                    <th scope="col"><button type="button" class="btn btn-success">Crear</button>
+                    <th scope="col"><button type="button" class="btn btn-warning">Editar</button>
+                    </th>
+                    <th scope="col"><button type="button" class="btn btn-danger">Eliminar</button>
+                    </th>
                 </tr>
                 <tr>
                     <th scope="row">000006</th>
@@ -253,7 +305,11 @@
                     <td>420.000<img class="imagen" src=""></td>
                     <td>280.000</td>
                     <td><img class="imagen" src="./img/ceramicos/piazza-bacha.jpg"></td>
-
+                    <th scope="col"><button type="button" class="btn btn-success">Crear</button>
+                    <th scope="col"><button type="button" class="btn btn-warning">Editar</button>
+                    </th>
+                    <th scope="col"><button type="button" class="btn btn-danger">Eliminar</button>
+                    </th>
                 </tr>
                 <tr>
                     <th scope="row">000001</th>
@@ -262,7 +318,11 @@
                     <td>420.000<img class="imagen" src=""></td>
                     <td>280.000</td>
                     <td><img class="imagen" src="./img/ceramicos/klaukol-verde.jpg"></td>
-
+                    <th scope="col"><button type="button" class="btn btn-success">Crear</button>
+                    <th scope="col"><button type="button" class="btn btn-warning">Editar</button>
+                    </th>
+                    <th scope="col"><button type="button" class="btn btn-danger">Eliminar</button>
+                    </th>
                 </tr>
                 <tr>
                     <th scope="row">000001</th>
@@ -271,7 +331,11 @@
                     <td>420.000</td>
                     <td>280.000</td>
                     <td><img class="imagen" src="./img/ceramicos/alberdi.webp"></td>
-
+                    <th scope="col"><button type="button" class="btn btn-success">Crear</button>
+                    <th scope="col"><button type="button" class="btn btn-warning">Editar</button>
+                    </th>
+                    <th scope="col"><button type="button" class="btn btn-danger">Eliminar</button>
+                    </th>
                 </tr>
                 <tr>
                     <th scope="row">000002</th>
@@ -280,7 +344,11 @@
                     <td>420.000<img class="imagen" src=""></td>
                     <td>280.000</td>
                     <td><img class="imagen" src="./img/ceramicos/klaukol-red.jpg"></td>
-
+                    <th scope="col"><button type="button" class="btn btn-success">Crear</button>
+                    <th scope="col"><button type="button" class="btn btn-warning">Editar</button>
+                    </th>
+                    <th scope="col"><button type="button" class="btn btn-danger">Eliminar</button>
+                    </th>
                 </tr>
                 <tr>
                     <th scope="row">000003</th>
@@ -289,7 +357,11 @@
                     <td>420.000<img class="imagen" src=""></td>
                     <td>280.000</td>
                     <td><img class="imagen" src="./img/ceramicos/klaukol-red.jpg"></td>
-
+                    <th scope="col"><button type="button" class="btn btn-success">Crear</button>
+                    <th scope="col"><button type="button" class="btn btn-warning">Editar</button>
+                    </th>
+                    <th scope="col"><button type="button" class="btn btn-danger">Eliminar</button>
+                    </th>
                 </tr>
                 <tr>
                     <th scope="row">000004</th>
@@ -298,7 +370,11 @@
                     <td>420.000<img class="imagen" src=""></td>
                     <td>280.000</td>
                     <td><img class="imagen" src="./img/ceramicos/black.webp"></td>
-
+                    <th scope="col"><button type="button" class="btn btn-success">Crear</button>
+                    <th scope="col"><button type="button" class="btn btn-warning">Editar</button>
+                    </th>
+                    <th scope="col"><button type="button" class="btn btn-danger">Eliminar</button>
+                    </th>
                 </tr>
                 <tr>
                     <th scope="row">000005</th>
@@ -307,7 +383,11 @@
                     <td>420.000<img class="imagen" src=""></td>
                     <td>280.000</td>
                     <td><img class="imagen" src="./img/ceramicos/murano1.jpg"></td>
-
+                    <th scope="col"><button type="button" class="btn btn-success">Crear</button>
+                    <th scope="col"><button type="button" class="btn btn-warning">Editar</button>
+                    </th>
+                    <th scope="col"><button type="button" class="btn btn-danger">Eliminar</button>
+                    </th>
                 </tr>
                 <tr>
                     <th scope="row">000006</th>
@@ -316,7 +396,11 @@
                     <td>420.000<img class="imagen" src=""></td>
                     <td>280.000</td>
                     <td><img class="imagen" src="./img/ceramicos/piazza-bacha.jpg"></td>
-
+                    <th scope="col"><button type="button" class="btn btn-success">Crear</button>
+                    <th scope="col"><button type="button" class="btn btn-warning">Editar</button>
+                    </th>
+                    <th scope="col"><button type="button" class="btn btn-danger">Eliminar</button>
+                    </th>
                 </tr>
                 <tr>
                     <th scope="row">000001</th>
@@ -325,7 +409,11 @@
                     <td>420.000<img class="imagen" src=""></td>
                     <td>280.000</td>
                     <td><img class="imagen" src="./img/ceramicos/klaukol-verde.jpg"></td>
-
+                    <th scope="col"><button type="button" class="btn btn-success">Crear</button>
+                    <th scope="col"><button type="button" class="btn btn-warning">Editar</button>
+                    </th>
+                    <th scope="col"><button type="button" class="btn btn-danger">Eliminar</button>
+                    </th>
                 </tr>
                 <tr>
                     <th scope="row">000001</th>
@@ -334,7 +422,11 @@
                     <td>420.000</td>
                     <td>280.000</td>
                     <td><img class="imagen" src="./img/ceramicos/alberdi.webp"></td>
-
+                    <th scope="col"><button type="button" class="btn btn-success">Crear</button>
+                    <th scope="col"><button type="button" class="btn btn-warning">Editar</button>
+                    </th>
+                    <th scope="col"><button type="button" class="btn btn-danger">Eliminar</button>
+                    </th>
                 </tr>
                 <tr>
                     <th scope="row">000002</th>
@@ -343,7 +435,11 @@
                     <td>420.000<img class="imagen" src=""></td>
                     <td>280.000</td>
                     <td><img class="imagen" src="./img/ceramicos/klaukol-red.jpg"></td>
-
+                    <th scope="col"><button type="button" class="btn btn-success">Crear</button>
+                    <th scope="col"><button type="button" class="btn btn-warning">Editar</button>
+                    </th>
+                    <th scope="col"><button type="button" class="btn btn-danger">Eliminar</button>
+                    </th>
                 </tr>
                 <tr>
                     <th scope="row">000003</th>
@@ -352,7 +448,11 @@
                     <td>420.000<img class="imagen" src=""></td>
                     <td>280.000</td>
                     <td><img class="imagen" src="./img/ceramicos/klaukol-red.jpg"></td>
-
+                    <th scope="col"><button type="button" class="btn btn-success">Crear</button>
+                    <th scope="col"><button type="button" class="btn btn-warning">Editar</button>
+                    </th>
+                    <th scope="col"><button type="button" class="btn btn-danger">Eliminar</button>
+                    </th>
                 </tr>
                 <tr>
                     <th scope="row">000004</th>
@@ -361,7 +461,11 @@
                     <td>420.000<img class="imagen" src=""></td>
                     <td>280.000</td>
                     <td><img class="imagen" src="./img/ceramicos/black.webp"></td>
-
+                    <th scope="col"><button type="button" class="btn btn-success">Crear</button>
+                    <th scope="col"><button type="button" class="btn btn-warning">Editar</button>
+                    </th>
+                    <th scope="col"><button type="button" class="btn btn-danger">Eliminar</button>
+                    </th>
                 </tr>
                 <tr>
                     <th scope="row">000005</th>
@@ -370,7 +474,11 @@
                     <td>420.000<img class="imagen" src=""></td>
                     <td>280.000</td>
                     <td><img class="imagen" src="./img/ceramicos/murano1.jpg"></td>
-
+                    <th scope="col"><button type="button" class="btn btn-success">Crear</button>
+                    <th scope="col"><button type="button" class="btn btn-warning">Editar</button>
+                    </th>
+                    <th scope="col"><button type="button" class="btn btn-danger">Eliminar</button>
+                    </th>
                 </tr>
                 <tr>
                     <th scope="row">000006</th>
@@ -379,7 +487,11 @@
                     <td>420.000<img class="imagen" src=""></td>
                     <td>280.000</td>
                     <td><img class="imagen" src="./img/ceramicos/piazza-bacha.jpg"></td>
-
+                    <th scope="col"><button type="button" class="btn btn-success">Crear</button>
+                    <th scope="col"><button type="button" class="btn btn-warning">Editar</button>
+                    </th>
+                    <th scope="col"><button type="button" class="btn btn-danger">Eliminar</button>
+                    </th>
                 </tr>
                 <tr>
                     <th scope="row">000001</th>
@@ -388,7 +500,11 @@
                     <td>420.000<img class="imagen" src=""></td>
                     <td>280.000</td>
                     <td><img class="imagen" src="./img/ceramicos/klaukol-verde.jpg"></td>
-
+                    <th scope="col"><button type="button" class="btn btn-success">Crear</button>
+                    <th scope="col"><button type="button" class="btn btn-warning">Editar</button>
+                    </th>
+                    <th scope="col"><button type="button" class="btn btn-danger">Eliminar</button>
+                    </th>
                 </tr>
 
 
@@ -402,7 +518,7 @@
             <div class="row">
                 <div class="d-flex justify-content-start">
                     <i class="fa-regular fa-floppy-disk" id="guardar"></i>
-                    <button type="button" class="btn btn-secondary"style="width:15rem">Guardar</button>
+                    <button type="button" class="btn btn-secondary" style="width:15rem">Guardar</button>
 
                 </div>
             </div>

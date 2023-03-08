@@ -3,6 +3,7 @@
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\homeController;
+use App\Http\Controllers\productosController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -39,6 +40,10 @@ Route::get('/home',[homeController::class,'index']);
 
 Route::get('/menu',[homeController::class,'menuPrincipal']);
 
+Route::get('inventario/productos',[productosController::class,'productos']);
+
+Route::resource('inventario/productos',productosController::class);
+
 
 
 
@@ -54,6 +59,11 @@ Route::get('/menuPrincipal', function () {
 
 //Inicio de Rutas de modulo de inventario
 
+Route::get('/inventarioNew', function () {
+    return view('inventario.inventarioNew');
+});
+
+
 Route::get('/menu_inventario', function () {
     return view('menu_inventario');
 });
@@ -64,6 +74,10 @@ Route::get('/toma_inventario', function () {
 
 Route::get('/logistica_movimientos', function () {
     return view('/logistica_movimientos');
+});
+
+Route::get('/productos', function () {
+    return view('/inventario.productos');
 });
 
 Route::get('/usuarios', function () {
@@ -110,11 +124,6 @@ Route::get('/salidasBuscar', function () {
 Route::get('/dashboard', function () {
     return view('dashboard.dashboard');
 });
-
-Route::get('/inventarioNew', function () {
-    return view('inventarioNew');
-});
-
 
 
 Route::get('/register', function () {

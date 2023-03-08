@@ -90,8 +90,6 @@
                 <th scope="col">Código de Producto</th>
                 <th scope="col">Articulo</th>
                 <th scope="col">Img Articulo</th>
-                
-
             </tr>
         </thead>
         <tbody>

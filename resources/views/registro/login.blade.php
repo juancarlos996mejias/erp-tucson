@@ -18,7 +18,7 @@
   <body class=" contenedorLogin">
 
   @auth
-<p><h3>Bienvenido al System Tucson</h3></p>
+<p><h2>Bienvenido al System Tucson</h2></p>
   @endauth
 
   @guest
@@ -59,7 +59,7 @@
         <br>
 
         <input type="submit" value="ENTRAR"class="btn btn-secondary text-white fw-semibold shadow-sm w-100 mt-4" id="login"></div>
-  
+ 
         </form>
 
       </div>

@@ -402,7 +402,7 @@ return [
                 ],   
                 [
                     'text' => 'Productos',
-                    'url'  => 'menu_inventario',
+                    'url'  => 'productos',
                     
                 ],   
                 [

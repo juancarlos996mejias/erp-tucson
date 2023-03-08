@@ -17,11 +17,10 @@
     <br>
 
 
-
-    <div class="iconPrincipalInventario">
-        <i class="fa fa-boxes"></i>
+    <div class="iconPrincipal">
+  <img src="./img/storage.png">
         <p>Inventario</p>
-    </div>
+</div>
 
     <div class="containerInventario">
         <div class="row d-flex justify-content-around">
@@ -181,7 +180,7 @@
                 <div class="modal-body" id="modalBody">
                 <a href="./inventario_entradas"><button type="button" class="btn" data-bs-dismiss="modal">Nuevo</button></a>
                 <a href="./inventario_entradas"><button type="button" class="btn">Cargar </button></a>
-                <a href="./inventario_entradas"><button type="button" class="btn">Listar</button></a>
+                <a href="./productos"><button type="button" class="btn">Listar</button></a>
                 </div>
 
                 <div class="modal-footer" id="modalFooter">
