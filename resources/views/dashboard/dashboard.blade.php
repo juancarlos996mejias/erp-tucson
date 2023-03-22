@@ -15,24 +15,24 @@
 @section('content')
 
 
-<div class="d-flex justify-content-around">
+<div class="d-flex justify-content-around bg-secondary">
 
-  <div class="row col-5 justify-content-around">
-    <canvas id="myChart"></canvas>
+  <div class="row col-3 justify-content-around">
+    <canvas id="myChart" width="100" height="100"></canvas>
   </div>
 
   <div class="row col-3">
-    <canvas id="chartLine"></canvas>
+    <canvas id="chartLine" width="100" height="100"></canvas>
   </div>
 </div>
 
-<div class="d-flex justify-content-around">
-  <div class="row col-3">
-    <canvas id="chartBar"></canvas>
+<div class="d-flex justify-content-around bg-secondary">
+  <div class="row col-3 mt-4">
+    <canvas id="chartBar" width="100" height="100"></canvas>
   </div>
 
-  <div class="row col-5 mt-4">
-    <canvas id="chartBar2"></canvas>
+  <div class="row col-3 mt-4">
+    <canvas id="chartBar2" width="100" height="100"></canvas>
   </div>
 
 </div>
@@ -44,7 +44,7 @@
 
 <script>
   const ctx = document.getElementById('myChart');
-
+  Chart.defaults.color = '#fff'
   new Chart(ctx, {
     type: 'line',
     data: {
@@ -52,7 +52,6 @@
       datasets: [{
         label: 'ENTRADAS',
         data: [12, 19, 3, 5, 2, 3],
-        
         borderWidth: 1
       }]
     },
@@ -67,27 +66,33 @@
 </script>
 
 
-
-
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
-  const gra = document.getElementById('chartLine');
-
+  const gra = document.getElementById('chartLine').getContext("2d");
+  Chart.defaults.color = '#fff'
   new Chart(gra, {
-    type: 'doughnut',
+    type: 'radar',
     data: {
       labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
       datasets: [{
         label: 'PRODUCTOS',
         data: [12, 19, 3, 5, 2, 3],
+        backgroundColor: [
+          'rgb(244, 208, 63)',
+        
+        ],
+        
         borderWidth: 1
       }]
     },
     options: {
       scales: {
+        x: {
+          stacked: true
+        },
         y: {
-          beginAtZero: true
+          stacked: true
         }
       }
     }
@@ -101,7 +106,7 @@
 
 <script>
   const gra2 = document.getElementById('chartBar');
-
+  Chart.defaults.color = '#fff'
   new Chart(gra2, {
     type: 'doughnut',
     data: {
@@ -113,6 +118,11 @@
       }]
     },
     options: {
+      plugins: {
+        legend: {
+          position: 'right'
+        }
+      },
       scales: {
         y: {
           beginAtZero: true
@@ -128,7 +138,7 @@
 
 <script>
   const gra3 = document.getElementById('chartBar2');
-
+  Chart.defaults.color = '#fff'
   new Chart(gra3, {
     type: 'bar',
     data: {
@@ -136,6 +146,16 @@
       datasets: [{
         label: 'SALIDAS',
         data: [12, 19, 3, 5, 2, 3],
+        backgroundColor: [
+          'rgb(93,173, 226)',
+          'rgb(187, 143, 206)',
+          'rgb(247, 220, 111)',
+          'rgb(130, 224, 170)',
+          'rgb(243, 156, 18)',
+          'rgb(241, 148, 138)',
+
+
+        ],
         borderWidth: 1
       }]
     },
