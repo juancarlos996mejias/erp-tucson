@@ -19,12 +19,9 @@
     <br>
 
 
-    <div class="iconPrincipal">
-  <img src="./img/storage.png">
-        <p>Inventario</p>
-</div>
+  
 
-    <div class="containerInventario">
+    <div class="containerInventario mt-4">
         <div class="row d-flex justify-content-around">
 
             <div class="col-2 mt-4">
@@ -35,7 +32,7 @@
                         <div class="d-flex justify-content-between">
                             <p>Nuevo, Listar, Buscar</p>
                         </div>
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mi-modalEntrada">Mas</button>
+                        <button class="btn btn-dark" id="power" data-bs-toggle="modal" data-bs-target="#mi-modalEntrada"><i class="fa-solid fa-right-to-bracket"></i></button>
                     </div>
                 </div>
             </div>
@@ -50,7 +47,7 @@
                         <div class="d-flex justify-content-between">
                             <p>Nuevo, Listar, Buscar</p>
                         </div>
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mi-modalSalida">Mas</button>
+                        <button class="btn btn-dark" id="power" data-bs-toggle="modal" data-bs-target="#mi-modalEntrada"><i class="fa-solid fa-door-open"></i></button>
                     </div>
                 </div>
             </div>
@@ -63,7 +60,7 @@
                         <div class="d-flex justify-content-between">
                             <p>Crear, Modificar, Eliminar</p>
                         </div>
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mi-modalProducto">Mas</button>
+                        <button class="btn btn-dark" id="power" data-bs-toggle="modal" data-bs-target="#mi-modalEntrada"><i class="fa-solid fa-boxes-stacked"></i></button>
                     </div>
                 </div>
             </div>
@@ -79,7 +76,7 @@
                         <div class="d-flex justify-content-between">
                             <p>Entradas, Salidas, Dif Stock</p>
                         </div>
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mi-modalInventario">Mas</button>
+                        <button class="btn btn-dark" id="power" data-bs-toggle="modal" data-bs-target="#mi-modalEntrada"><i class="fa-solid fa-barcode"></i></button>
                     </div>
                 </div>
             </div>
@@ -92,7 +89,7 @@
                         <div class="d-flex justify-content-between">
                             <p>Origen, Destino</p>
                         </div>
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mi-modalMovimiento">Mas</button>
+                        <button class="btn btn-dark" id="power" data-bs-toggle="modal" data-bs-target="#mi-modalEntrada"><i class="fa-solid fa-rotate"></i></button>
                     </div>
                 </div>
             </div>
@@ -105,7 +102,7 @@
                         <div class="d-flex justify-content-between">
                             <p>Soporte</p>
                         </div>
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mi-modalConfiguracion">Mas</button>
+                        <button class="btn btn-dark" id="power" data-bs-toggle="modal" data-bs-target="#mi-modalEntrada"><i class="fa-solid fa-screwdriver-wrench"></i></button>
                     </div>
                 </div>
             </div>
@@ -132,7 +129,7 @@
                 </div>
 
                 <div class="modal-body" id="modalBody">
-                <a href="./entradasNuevo"><button type="button" class="btn" data-bs-dismiss="modal">Nuevo</button></a>
+                <a href="./entradas"><button type="button" class="btn" data-bs-dismiss="modal">Nuevo</button></a>
                 <a href="./entradasListar"><button type="button" class="btn">Listar </button></a>
                 <a href="./entradasBuscar"><button type="button" class="btn">Buscar</button></a>
                 </div>
@@ -156,7 +153,7 @@
                 </div>
 
                 <div class="modal-body" id="modalBody">
-                <a href="./salidasNuevo"><button type="button" class="btn" data-bs-dismiss="modal">Nuevo</button></a>
+                <a href="./salidasNuevo"><button type="button" class="btn" data-bs-dismiss="modal">Historial</button></a>
                 <a href="./salidasListar"> <button type="button" class="btn">Listar </button></a>
                 <a href="./salidasBuscar"><button type="button" class="btn">Buscar</button></a>
                 </div>

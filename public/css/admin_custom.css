@@ -26,8 +26,39 @@
 
 }
 
-#header {
-    color: #413F42;
+#headerUsuario {
+    color: #222831;
+    background:#FEBF63;
+
+}
+
+#headerVentas {
+    color: #222831;
+    background:#CDFFFC;
+
+}
+
+#headerInventario {
+    color: #222831;
+    background:#FFFA9D;
+
+}
+
+#headerLogistica {
+    color: #222831;
+    background:#E5D1FA;
+
+}
+
+#headerOperaciones {
+    color: #222831;
+    background:#B9E9FC;
+
+}
+
+#headerDashboard {
+    color: #222831;
+    background:#C9F4AA;
 
 }
 
@@ -63,10 +94,7 @@
     background: #7DCE13;
 }
 
-.card {
-color:#222831;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px;
-}
+
 
 #bodyListar{
    
@@ -162,7 +190,7 @@ margin-bottom: 80px;
 }
 
 .iconUsuario img{
-    height: 60px;
+    height: 40px;
     margin-left: 65px;
     
 }
@@ -174,7 +202,7 @@ margin-bottom: 80px;
 }
 .iconUsuario p{
     height: 40px;
-    margin-left: 55px;
+    margin-left: 35px;
 }
 
 .iconVentas p{
@@ -183,7 +211,7 @@ margin-bottom: 80px;
 }
 
 .iconPrincipal img{
-    height: 50px;
+    height: 40px;
     margin-left: 60px;
     margin-top: 10px;
 }
@@ -266,6 +294,30 @@ margin-bottom: 90px;
 #contenedorPrincipal{
     display: flex;
 justify-content: center;
+margin-left: 200px;
+}
+
+
+#nuevoProducto{
+    height: 40px;
+    width: 160px;
+}
+
+#nuevoProducto p{
+  margin-bottom: 20px;
+}
+
+#power{
+    height: 35px;
+    width: 70px;
+
+}
+
+#power i{
+    margin-bottom: 15px;
+    color:#E5D1FA;
+    font-size: 20px;
+    margin-left: 10px;
 }
 
 

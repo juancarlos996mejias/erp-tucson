@@ -92,8 +92,12 @@ Route::get('/ventas', function () {
 
 //inventario_Entradas
 
-Route::get('/entradasNuevo', function () {
-    return view('inventario.entradasNuevo');
+Route::get('/entradas', function () {
+    return view('inventario.entradas');
+});
+
+Route::get('/nuevoProducto', function () {
+    return view('inventario.nuevoProducto');
 });
 
 Route::get('/entradasListar', function () {

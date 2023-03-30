@@ -76,6 +76,12 @@
 
     <hr>
 
+    <div class="d-flex justify-content-center mt-4">
+        <a href="./nuevoProducto"><button class="btn btn-success"><i class="fa-solid fa-plus"></i>
+            <p>Listar Entradas</p>
+        </button></a>
+    </div>
+
     <div class="container py-5">
 <div class="row">
 

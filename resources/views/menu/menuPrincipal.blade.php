@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'DASHBOARD')
+@section('title', 'MENU')
 
 @section('content_header')
 
@@ -11,12 +11,15 @@
 @stop
 
 @section('content')
-<div class=" container" id="contenedorPrincipal">
+
+
+
+<div class=" container justify-content-center" id="contenedorPrincipal">
 
   <a href="./usuarios">
-    <div class="col">
+    <div class="col mt-4">
       <div class="card " style="max-width: 20rem;" id="principal">
-        <div class="card-header" id="header">USUARIOS</div>
+        <div class="card-header" id="headerUsuario">USUARIOS</div>
         <div class="card-body" id="bodyUsuario">
           <i class="fa fa-users"></i>
         </div>
@@ -25,7 +28,7 @@
 
 <a href="./ventas">
   <div class="card " style="max-width: 20rem;" id="principal">
-    <div class="card-header" id="header">VENTAS</div>
+    <div class="card-header" id="headerVentas">VENTAS</div>
     <div class="card-body" id="bodyVentas">
       <i class="fa fa-credit-card"></i>
     </div>
@@ -34,7 +37,7 @@
 
 <a href="./inventarioNew">
   <div class="card " style="max-width: 20rem;" id="principal">
-    <div class="card-header" id="header">INVENTARIO</div>
+    <div class="card-header" id="headerInventario">INVENTARIO</div>
     <div class="card-body" id="bodyInventario">
       <i class="fa fa-boxes"></i>
     </div>
@@ -43,9 +46,9 @@
 </a>
 
 <a href="./menu_inventario">
-  <div class="col">
+  <div class="col mt-4">
     <div class="card " style="max-width: 20rem;" id="principal">
-      <div class="card-header" id="header">LOGISTICA</div>
+      <div class="card-header" id="headerLogistica">LOGISTICA</div>
       <div class="card-body" id="bodyLogistica">
         <i class="fa fa-truck fast"></i>
       </div>
@@ -54,7 +57,7 @@
 
 <a href="./menu_inventario">
   <div class="card " style="max-width: 20rem;" id="principal">
-    <div class="card-header" id="header">OPERACIONES</div>
+    <div class="card-header" id="headerOperaciones">OPERACIONES</div>
     <div class="card-body" id="bodyOperaciones">
       <i class="fa fa-network-wired"></i>
     </div>
@@ -63,7 +66,7 @@
 
 <a href="./dashboard">
   <div class="card " style="max-width: 20rem;" id="principal">
-    <div class="card-header" id="header">DASHBOARD</div>
+    <div class="card-header" id="headerDashboard">DASHBOARD</div>
     <div class="card-body" id="bodyDashboard">
       <i class="fa fa-chart-line"></i>
     </div>

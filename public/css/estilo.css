@@ -452,11 +452,7 @@ justify-content: center;
     width: 70px;
 }
 
-.cardNew:hover{
-box-shadow: 20px 20px 80px -44px #000;
-transition: .5s ease-in-out;
-cursor: pointer;
-}
+
 
 
 
