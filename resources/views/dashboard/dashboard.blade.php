@@ -15,36 +15,94 @@
 @section('content')
 
 
-<div class="d-flex justify-content-around bg-secondary">
+<body>
 
-  <div class="row col-3 justify-content-around">
-    <canvas id="myChart" width="100" height="100"></canvas>
+
+
+  <div class="container">
+    <div class="row">
+
+<div class="col p-3">
+      <div class="card" style=" width: 15em;" id="principal">
+        <div class="card-header" id="headerVentas">VENTAS</div>
+        <div class="card-body" id="bodyVentas">
+        <i class="fa fa-dollar-sign"></i>
+          <div class="number">
+          <p>234</p>
+          </div>
+          
+        </div>
+      </div>
+      </div>
+
+      <div class="col p-3">
+      <div class="card" style=" width: 15em;" id="principal">
+        <div class="card-header" id="headerUsuario">ENTRADAS</div>
+        <div class="card-body" id="bodyUsuario">
+        <i class="fa fa-arrow-right"></i>
+        <div class="number">
+          <p> 352</p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="col p-3">
+      <div class="card " style="width: 15em;" id="principal">
+        <div class="card-header" id="headerInventario">SALIDAS</div>
+        <div class="card-body" id="bodyInventario">
+        <i class="fa fa-door-open"></i>
+        <div class="number">
+          <p> 420</p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="col p-3">
+      <div class="card " style="width: 15em;" id="principal">
+        <div class="card-header" id="headerLogistica">PRODUCTOS</div>
+        <div class="card-body" id="bodyLogistica">
+          <i class="fa fa-boxes"></i>
+          <div class="number">
+          <p> 6420</p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+<div class="d-flex justify-content-around bg-primary">
+  <div class="row col-3">
+    <canvas id="chartBar" width="150" height="150"></canvas>
   </div>
 
   <div class="row col-3">
-    <canvas id="chartLine" width="100" height="100"></canvas>
-  </div>
-</div>
-
-<div class="d-flex justify-content-around bg-secondary">
-  <div class="row col-3 mt-4">
-    <canvas id="chartBar" width="100" height="100"></canvas>
-  </div>
-
-  <div class="row col-3 mt-4">
-    <canvas id="chartBar2" width="100" height="100"></canvas>
+    <canvas id="chartBar2" width="150" height="150"></canvas>
   </div>
 
 </div>
 </div>
-
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 
 <script>
   const ctx = document.getElementById('myChart');
-  Chart.defaults.color = '#fff'
+  Chart.defaults.color = '#0000';
   new Chart(ctx, {
     type: 'line',
     data: {
@@ -66,38 +124,7 @@
 </script>
 
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-<script>
-  const gra = document.getElementById('chartLine').getContext("2d");
-  Chart.defaults.color = '#fff'
-  new Chart(gra, {
-    type: 'radar',
-    data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-      datasets: [{
-        label: 'PRODUCTOS',
-        data: [12, 19, 3, 5, 2, 3],
-        backgroundColor: [
-          'rgb(244, 208, 63)',
-        
-        ],
-        
-        borderWidth: 1
-      }]
-    },
-    options: {
-      scales: {
-        x: {
-          stacked: true
-        },
-        y: {
-          stacked: true
-        }
-      }
-    }
-  });
-</script>
 
 
 
@@ -171,9 +198,7 @@
 <br>
 <br>
 
-</body>
 
-</html>
 
 
 

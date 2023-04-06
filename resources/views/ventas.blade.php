@@ -17,8 +17,8 @@
 
 
 
-<div class="d-flex justify-content-star ">
-  <div class="col">
+<div class="d-flex justify-content-center ">
+  <div class="col-4 mt-4">
     <div class=" container d-flex justify-content-center py-4" id="ventas">
       <a href="./usuarios">
         <div class="card text">
@@ -42,7 +42,7 @@
     </div>
   </div>
 
-  <div class="col">
+  <div class="col-4 mt-4">
     <div class=" container py-4" id="ventas">
       <a href="./usuarios">
         <div class="card text">

@@ -36,7 +36,15 @@
     color: #222831;
     background:#CDFFFC;
 
+
 }
+
+#ventas{
+    height: 120px;
+    margin-right: 40px;
+}
+
+
 
 #headerInventario {
     color: #222831;
@@ -136,27 +144,29 @@
 }
 
 #bodyNuevo{
-    padding: 35px;
+    padding: 50px;
     background: #00E7FF;
+    font-size: 120px;
 }
 
 #bodyNuevo i{
-    font-size: 45px;
+    font-size: 40px;
     margin-right: 120px;
 }
 
 #bodyFacturar{
-    padding: 35px;
+    padding: 50px;
     background: #00E7FF;
 }
 
 #bodyFacturar i{
     font-size: 45px;
     margin-right: 120px;
+    
 }
 
 #bodyBuscar{
-    padding: 35px;
+    padding: 50px;
     background: #00E7FF;
     
 }
@@ -174,7 +184,7 @@
 
 
 #bodyReportes{
-    padding: 35px;
+    padding: 50px;
     background: #00E7FF;
 }
 
@@ -319,6 +329,25 @@ margin-left: 200px;
     font-size: 20px;
     margin-left: 10px;
 }
+
+#agregarArticulo{
+    background: #937DC2;
+    color:#CDFFFC;
+}
+
+#agregarArticulo p{
+    color:#CDFFFC;
+}
+
+.number p{
+    font-size: 40px;
+    color: #222831;
+}
+
+
+
+
+
 
 
 

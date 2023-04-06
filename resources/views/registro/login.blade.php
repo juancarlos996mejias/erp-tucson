@@ -22,7 +22,7 @@
   @endauth
 
   @guest
-  <p>Para Ingresar inicia sesion<a href="/login"></a></p>
+  <p><h2>Para Ingresar inicia sesion<a href="/login"></a></h2></p>
   @endguest
     
     <div class="contenedor d-flex justify-content-center aling-items-center " style="height:490px">

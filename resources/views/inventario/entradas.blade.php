@@ -17,9 +17,31 @@
 
 
     <div class="d-flex justify-content-center mt-4">
-        <a href="./nuevoProducto"><button class="btn btn-success"><i class="fa-solid fa-plus"></i>
-            <p>Ingresar Articulo</p>
-        </button></a>
+        <a href="./nuevoProducto"><button class="btn btn-primary" id="agregarArticulo"><i class="fa-solid fa-plus"></i>
+                <p>Agregar Articulo</p>
+            </button></a>
+    </div>
+
+
+    <div class="row justify-content-around">
+        <div class="d-flex col-2">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Seleccione Almacen</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+
+        <div class="d-flex col-2">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Seleccione Rubro</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+    </div>
     </div>
 
 
@@ -49,7 +71,7 @@
                     <td><img class="imagen" src="./img/ceramicos/alberdi.webp"></td>
                     <th scope="col"><button type="button" class="btn btn-warning"><i class="fa-solid fa-pen"></i></button>
                     </th>
-                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                     </th>
 
                 </tr>
@@ -62,7 +84,7 @@
                     <td><img class="imagen" src="./img/ceramicos/klaukol-red.jpg"></td>
                     <th scope="col"><button type="button" class="btn btn-warning"><i class="fa-solid fa-pen"></i></button>
                     </th>
-                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                     </th>
                 </tr>
                 <tr>
@@ -74,7 +96,7 @@
                     <td><img class="imagen" src="./img/ceramicos/klaukol-red.jpg"></td>
                     <th scope="col"><button type="button" class="btn btn-warning"><i class="fa-solid fa-pen"></i></button>
                     </th>
-                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                     </th>
                 </tr>
                 <tr>
@@ -86,7 +108,7 @@
                     <td><img class="imagen" src="./img/ceramicos/black.webp"></td>
                     <th scope="col"><button type="button" class="btn btn-warning"><i class="fa-solid fa-pen"></i></button>
                     </th>
-                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                     </th>
                 </tr>
                 <tr>
@@ -98,7 +120,7 @@
                     <td><img class="imagen" src="./img/ceramicos/murano1.jpg"></td>
                     <th scope="col"><button type="button" class="btn btn-warning"><i class="fa-solid fa-pen"></i></button>
                     </th>
-                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                     </th>
                 </tr>
                 <tr>
@@ -110,7 +132,7 @@
                     <td><img class="imagen" src="./img/ceramicos/piazza-bacha.jpg"></td>
                     <th scope="col"><button type="button" class="btn btn-warning"><i class="fa-solid fa-pen"></i></button>
                     </th>
-                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                     </th>
                 </tr>
                 <tr>
@@ -122,7 +144,7 @@
                     <td><img class="imagen" src="./img/ceramicos/klaukol-verde.jpg"></td>
                     <th scope="col"><button type="button" class="btn btn-warning"><i class="fa-solid fa-pen"></i></button>
                     </th>
-                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                     </th>
                 </tr>
                 <tr>
@@ -134,7 +156,7 @@
                     <td><img class="imagen" src="./img/ceramicos/alberdi.webp"></td>
                     <th scope="col"><button type="button" class="btn btn-warning"><i class="fa-solid fa-pen"></i></button>
                     </th>
-                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                     </th>
                 </tr>
                 <tr>
@@ -146,7 +168,7 @@
                     <td><img class="imagen" src="./img/ceramicos/klaukol-red.jpg"></td>
                     <th scope="col"><button type="button" class="btn btn-warning"><i class="fa-solid fa-pen"></i></button>
                     </th>
-                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                     </th>
                 </tr>
                 <tr>
@@ -158,7 +180,7 @@
                     <td><img class="imagen" src="./img/ceramicos/klaukol-red.jpg"></td>
                     <th scope="col"><button type="button" class="btn btn-warning"><i class="fa-solid fa-pen"></i></button>
                     </th>
-                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                     </th>
                 </tr>
                 <tr>
@@ -170,7 +192,7 @@
                     <td><img class="imagen" src="./img/ceramicos/black.webp"></td>
                     <th scope="col"><button type="button" class="btn btn-warning"><i class="fa-solid fa-pen"></i></button>
                     </th>
-                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                     </th>
                 </tr>
                 <tr>
@@ -182,7 +204,7 @@
                     <td><img class="imagen" src="./img/ceramicos/murano1.jpg"></td>
                     <th scope="col"><button type="button" class="btn btn-warning"><i class="fa-solid fa-pen"></i></button>
                     </th>
-                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                     </th>
                 </tr>
                 <tr>
@@ -194,7 +216,7 @@
                     <td><img class="imagen" src="./img/ceramicos/piazza-bacha.jpg"></td>
                     <th scope="col"><button type="button" class="btn btn-warning"><i class="fa-solid fa-pen"></i></button>
                     </th>
-                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                     </th>
                 </tr>
                 <tr>
@@ -206,7 +228,7 @@
                     <td><img class="imagen" src="./img/ceramicos/klaukol-verde.jpg"></td>
                     <th scope="col"><button type="button" class="btn btn-warning"><i class="fa-solid fa-pen"></i></button>
                     </th>
-                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                     </th>
                 </tr>
                 <tr>
@@ -218,7 +240,7 @@
                     <td><img class="imagen" src="./img/ceramicos/alberdi.webp"></td>
                     <th scope="col"><button type="button" class="btn btn-warning"><i class="fa-solid fa-pen"></i></button>
                     </th>
-                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                     </th>
                 </tr>
                 <tr>
@@ -230,7 +252,7 @@
                     <td><img class="imagen" src="./img/ceramicos/klaukol-red.jpg"></td>
                     <th scope="col"><button type="button" class="btn btn-warning"><i class="fa-solid fa-pen"></i></button>
                     </th>
-                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                     </th>
                 </tr>
                 <tr>
@@ -242,7 +264,7 @@
                     <td><img class="imagen" src="./img/ceramicos/klaukol-red.jpg"></td>
                     <th scope="col"><button type="button" class="btn btn-warning"><i class="fa-solid fa-pen"></i></button>
                     </th>
-                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                     </th>
                 </tr>
                 <tr>
@@ -254,7 +276,7 @@
                     <td><img class="imagen" src="./img/ceramicos/black.webp"></td>
                     <th scope="col"><button type="button" class="btn btn-warning"><i class="fa-solid fa-pen"></i></button>
                     </th>
-                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                     </th>
                 </tr>
                 <tr>
@@ -266,7 +288,7 @@
                     <td><img class="imagen" src="./img/ceramicos/murano1.jpg"></td>
                     <th scope="col"><button type="button" class="btn btn-warning"><i class="fa-solid fa-pen"></i></button>
                     </th>
-                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                     </th>
                 </tr>
                 <tr>
@@ -278,7 +300,7 @@
                     <td><img class="imagen" src="./img/ceramicos/piazza-bacha.jpg"></td>
                     <th scope="col"><button type="button" class="btn btn-warning"><i class="fa-solid fa-pen"></i></button>
                     </th>
-                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                     </th>
                 </tr>
                 <tr>
@@ -290,7 +312,7 @@
                     <td><img class="imagen" src="./img/ceramicos/klaukol-verde.jpg"></td>
                     <th scope="col"><button type="button" class="btn btn-warning"><i class="fa-solid fa-pen"></i></button>
                     </th>
-                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                     </th>
                 </tr>
                 <tr>
@@ -302,7 +324,7 @@
                     <td><img class="imagen" src="./img/ceramicos/alberdi.webp"></td>
                     <th scope="col"><button type="button" class="btn btn-warning"><i class="fa-solid fa-pen"></i></button>
                     </th>
-                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                     </th>
                 </tr>
                 <tr>
@@ -314,7 +336,7 @@
                     <td><img class="imagen" src="./img/ceramicos/klaukol-red.jpg"></td>
                     <th scope="col"><button type="button" class="btn btn-warning"><i class="fa-solid fa-pen"></i></button>
                     </th>
-                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                     </th>
                 </tr>
                 <tr>
@@ -326,7 +348,7 @@
                     <td><img class="imagen" src="./img/ceramicos/klaukol-red.jpg"></td>
                     <th scope="col"><button type="button" class="btn btn-warning"><i class="fa-solid fa-pen"></i></button>
                     </th>
-                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                     </th>
                 </tr>
                 <tr>
@@ -338,7 +360,7 @@
                     <td><img class="imagen" src="./img/ceramicos/black.webp"></td>
                     <th scope="col"><button type="button" class="btn btn-warning"><i class="fa-solid fa-pen"></i></button>
                     </th>
-                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                     </th>
                 </tr>
                 <tr>
@@ -350,7 +372,7 @@
                     <td><img class="imagen" src="./img/ceramicos/murano1.jpg"></td>
                     <th scope="col"><button type="button" class="btn btn-warning"><i class="fa-solid fa-pen"></i></button>
                     </th>
-                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                     </th>
                 </tr>
                 <tr>
@@ -362,7 +384,7 @@
                     <td><img class="imagen" src="./img/ceramicos/piazza-bacha.jpg"></td>
                     <th scope="col"><button type="button" class="btn btn-warning"><i class="fa-solid fa-pen"></i></button>
                     </th>
-                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                     </th>
                 </tr>
                 <tr>
@@ -374,7 +396,7 @@
                     <td><img class="imagen" src="./img/ceramicos/klaukol-verde.jpg"></td>
                     <th scope="col"><button type="button" class="btn btn-warning"><i class="fa-solid fa-pen"></i></button>
                     </th>
-                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    <th scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                     </th>
                 </tr>
 
