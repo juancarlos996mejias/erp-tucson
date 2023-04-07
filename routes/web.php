@@ -3,6 +3,7 @@
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\homeController;
+use App\Http\Controllers\MasterProductosController;
 use App\Http\Controllers\productosController;
 use Illuminate\Support\Facades\Route;
 
@@ -21,9 +22,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', function () {
-    return view('home.index');
-});
+
 
 
 
@@ -36,13 +35,22 @@ Route::get('/login',[LoginController::class,'show']);
 
 Route::post('/login',[LoginController::class,'login']);
 
-Route::get('/home',[homeController::class,'index']);
-
 Route::get('/menu',[homeController::class,'menuPrincipal']);
 
 Route::get('inventario/productos',[productosController::class,'productos']);
 
 Route::resource('inventario/productos',productosController::class);
+
+
+
+Route::get('/index',[HomeController::class,'index'])->name('homeProductos.index');
+//route create
+Route::get('/create',[MasterProductosController::class,'create'])->name('masterProductos.create');
+//route edit
+Route::get('/edit',[MasterProductosController::class,'edit'])->name('masterProductos.edit');
+//route update
+Route::get('/update',[MasterProductosController::class,'update'])->name('masterProductos.update');
+
 
 
 
