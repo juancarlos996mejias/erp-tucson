@@ -60,7 +60,7 @@
                         <div class="d-flex justify-content-between">
                             <p>Crear, Modificar, Eliminar</p>
                         </div>
-                        <button class="btn btn-dark" id="power" data-bs-toggle="modal" data-bs-target="#mi-modalEntrada"><i class="fa-solid fa-boxes-stacked"></i></button>
+                        <button class="btn btn-dark" id="power" data-bs-toggle="modal" data-bs-target="#mi-modalProducto"><i class="fa-solid fa-boxes-stacked"></i></button>
                     </div>
                 </div>
             </div>
@@ -115,10 +115,7 @@
 
     <!--modal code-->
 
-
-
-
-
+ 
     <div class="modal fade" id="mi-modalEntrada" data-bs-backdrop="static">
         <div class="modal-dialog">
             <div class="modal-content" id="modalContent">
@@ -177,8 +174,8 @@
                 </div>
 
                 <div class="modal-body" id="modalBody">
-                <a href="./inventario_entradas"><button type="button" class="btn" data-bs-dismiss="modal">Nuevo</button></a>
-                <a href="./inventario_entradas"><button type="button" class="btn">Cargar </button></a>
+                <a href="./productos"><button type="button" class="btn" data-bs-dismiss="modal">Nuevo</button></a>
+                <a href="./productos"><button type="button" class="btn">Cargar </button></a>
                 <a href="./productos"><button type="button" class="btn">Listar</button></a>
                 </div>
 

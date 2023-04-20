@@ -35,7 +35,7 @@ Route::get('/login',[LoginController::class,'show']);
 
 Route::post('/login',[LoginController::class,'login']);
 
-Route::get('/menu',[homeController::class,'menuPrincipal']);
+
 
 Route::get('inventario/productos',[productosController::class,'productos']);
 
@@ -43,13 +43,17 @@ Route::resource('inventario/productos',productosController::class);
 
 
 
-Route::get('/index',[HomeController::class,'index'])->name('homeProductos.index');
+Route::get('/',[HomeController::class,'index'])->name('homeController.index');
+// menu principal
+Route::get('/menu',[homeController::class,'menu'])->name('homeController.menuPrincipal');
 //route create
-Route::get('/create',[MasterProductosController::class,'create'])->name('masterProductos.create');
+Route::get('/createProducto',[MasterProductosController::class,'createProducto'])->name('masterProductos.createProducto');
 //route edit
 Route::get('/edit',[MasterProductosController::class,'edit'])->name('masterProductos.edit');
 //route update
 Route::get('/update',[MasterProductosController::class,'update'])->name('masterProductos.update');
+
+Route::get('/productos',[ProductosController::class,'productos'])->name('ProductosController.productos');
 
 
 
@@ -60,9 +64,7 @@ Route::get('/login', function () {
     return view('registro.login');
 });
 
-Route::get('/menuPrincipal', function () {
-    return view('menu.menuPrincipal');
-});
+
 
 
 //Inicio de Rutas de modulo de inventario
@@ -84,9 +86,7 @@ Route::get('/logistica_movimientos', function () {
     return view('/logistica_movimientos');
 });
 
-Route::get('/productos', function () {
-    return view('/inventario.productos');
-});
+
 
 Route::get('/usuarios', function () {
     return view('usuarios');

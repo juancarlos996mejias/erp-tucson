@@ -28,7 +28,7 @@ class loginController extends Controller
     }
 
 public function authenticated(request $request,$user){
-    return redirect('/menuPrincipal');
+    return redirect('/menu');
 }
 
 }

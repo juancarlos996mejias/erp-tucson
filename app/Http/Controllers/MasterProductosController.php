@@ -4,20 +4,19 @@ namespace App\Http\Controllers;
 
 use App\Models\MasterProductos;
 use Illuminate\Http\Request;
+use Illuminate\Database\Eloquent\Model;
+
 
 class MasterProductosController extends Controller
 {
 
-    public function index()
+  
+//formulario donde vamos a crear datos
+    public function createProducto()
     {
-        //pagina de inicio
         
-    }
-
-    public function create()
-    {
-        //formulario donde vamos a crear datos
-        return "agregar";
+        
+        return view('inventario.createProducto');
     }
 
     public function store(Request $request)

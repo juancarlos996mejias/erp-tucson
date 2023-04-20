@@ -15,6 +15,12 @@ return new class extends Migration
     {
         Schema::create('inventory', function (Blueprint $table) {
             $table->id();
+            $table->string('codigo');
+            $table->string('articulo');
+            $table->string('marca');
+            $table->string('lote');
+            $table->string('stock');
+            $table->string('img');
             $table->timestamps();
         });
     }

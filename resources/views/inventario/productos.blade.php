@@ -9,7 +9,7 @@
 <body>
 
     <header>
-        <?php include(app_path() . "/../resources/views/template/header.php");?>
+        <?php include(app_path() . "/../resources/views/template/header.php"); ?>
     </header>
 
     <div class="container py-5">
@@ -78,21 +78,30 @@
                                             <tr class="text-bg-dark p-3">
                                                 <th>Código </th>
                                                 <th>Artículo</th>
-                                                <th>idMarca</th>
                                                 <th>Marca</th>
-                                                <th>idSuper Rubro</th>
                                                 <th>Super Rubro</th>
-                                                <th>idRubro</th>
                                                 <th>Rubro</th>
                                                 <th>Lote</th>
                                                 <th>Stock Total</th>
                                                 <th>Cantidad</th>
-                                                <th>Almacen</th>
                                                 <th>QR</th>
                                             </tr>
                                         </thead>
                                         <tbody>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><img class="imagen" src="./img/ceramicos/alberdi.webp"></td>
+                                                <td scope="col"><button type="button" class="btn btn-warning"><i class="fa-solid fa-pen"></i></button></td>
+                                                <td scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button></td>
 
+                                            </tr>
+                                        </tbody>
                                         </tbody>
                                     </table>
                                     <div id="qrcode"></div>
@@ -103,7 +112,7 @@
                     </div>
 
 
-                  
+
 
 
 
@@ -112,48 +121,107 @@
 </html>
 
 
-    <script>
-        $(document).ready(function() {
-            $('#inventario_table').DataTable({
-                "ajax": {
-                    "url":"env",
-                    "dataSrc":""
+<script>
+    $(document).ready(function() {
+        $('#inventario_table').DataTable({
+            "ajax": {
+                "url": "env",
+                "dataSrc": ""
+            },
+            "columns": [{
+                    "data": "ID"
                 },
-                "columns":[
-{"data":"ID"},
-{"data":"Codigo"},
-{"data":"Articulos"},
-{"data":"Marca"},
-{"data":"Super Rubro"},
-{"data":"Rubro"},
-{"data":"Lote"},
-{"data":"Stock Total"},
-{"data":"Almacen Talar"},
-{"data":"Almacen Outlet"},
-{"data":"Almacen Quilmes"},
-{"data":"Almacen MercadoLibre Ideko"},
-{"data":"Almacen MercadoLibre Tucson"},
-{"data":"Almacen Tigre"},
-{"data":"Almacen Bariloche"},
-{"data":"Local Pilar exhibiciones/muestras"},
-{"data":"Local ShowRoom Quilmes"},
-{"data":"Local ShowRoom Talar"},
-{"data":"Local ShowRoom outlet"},
-{"data":"Diferencia Ciclico"},
-{"data":"Almacen Mar. Venta"},
-{"data":"Mercaderia P/Devolver al Prov"},
-{"data":"Almacen Mar. Deposito"},
-{"data":"Stock Defectuoso/Fallas"},
-{"data":"Almacen Mar. Fabrica"},
-{"data":"Almacen Externo Intralog"},
-{"data":"Almacen Externo Intralog TML"},
-{"data":"Almacen Externo Intralog EE UU"},
-{"data":"Almacen Externo Mepano"},
-{"data":"Almacen Externo Paso de los Libres"},
-                ]
-            });
+                {
+                    "data": "Codigo"
+                },
+                {
+                    "data": "Articulos"
+                },
+                {
+                    "data": "Marca"
+                },
+                {
+                    "data": "Super Rubro"
+                },
+                {
+                    "data": "Rubro"
+                },
+                {
+                    "data": "Lote"
+                },
+                {
+                    "data": "Stock Total"
+                },
+                {
+                    "data": "Almacen Talar"
+                },
+                {
+                    "data": "Almacen Outlet"
+                },
+                {
+                    "data": "Almacen Quilmes"
+                },
+                {
+                    "data": "Almacen MercadoLibre Ideko"
+                },
+                {
+                    "data": "Almacen MercadoLibre Tucson"
+                },
+                {
+                    "data": "Almacen Tigre"
+                },
+                {
+                    "data": "Almacen Bariloche"
+                },
+                {
+                    "data": "Local Pilar exhibiciones/muestras"
+                },
+                {
+                    "data": "Local ShowRoom Quilmes"
+                },
+                {
+                    "data": "Local ShowRoom Talar"
+                },
+                {
+                    "data": "Local ShowRoom outlet"
+                },
+                {
+                    "data": "Diferencia Ciclico"
+                },
+                {
+                    "data": "Almacen Mar. Venta"
+                },
+                {
+                    "data": "Mercaderia P/Devolver al Prov"
+                },
+                {
+                    "data": "Almacen Mar. Deposito"
+                },
+                {
+                    "data": "Stock Defectuoso/Fallas"
+                },
+                {
+                    "data": "Almacen Mar. Fabrica"
+                },
+                {
+                    "data": "Almacen Externo Intralog"
+                },
+                {
+                    "data": "Almacen Externo Intralog TML"
+                },
+                {
+                    "data": "Almacen Externo Intralog EE UU"
+                },
+                {
+                    "data": "Almacen Externo Mepano"
+                },
+                {
+                    "data": "Almacen Externo Paso de los Libres"
+                },
+            ]
         });
-    </script>
+    });
+</script>
 
 </body>
 
