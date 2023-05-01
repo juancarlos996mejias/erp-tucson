@@ -1,228 +1,87 @@
-<!DOCTYPE html>
-<html lang="es">
+@extends('adminlte::page')
 
-<head>
-    <?php include(app_path() . "/../resources/views/template/head.php"); ?>
-    <script type="text/javascript" src="js/inventario.js"></script>
-</head>
+@section('title', 'PRODUCTOS')
 
-<body>
+@section('css')
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap4.min.css">
+@endsection
 
-    <header>
-        <?php include(app_path() . "/../resources/views/template/header.php"); ?>
-    </header>
+@section('content_header')
 
-    <div class="container py-5">
-        <div class="row">
-            <div class="refine-datatable">
-                <div class="container-square" style="border: 30px;">
-                    <div class="refine-group">
-                        <div style="display:inline">
+<div class="iconPrincipal">
+    <img src="#">
+    <p>Productos</p>
+</div>
+@stop
 
-                        </div>
-
-                        <br>
-                        <div class="d-flex justify-content-around">
-                            <div class="row">
-                                <div class="col-3">
-
-                                    <select class="form-select form-select-sm " aria-label=".form-select-sm example" style="width:60% " id="almacen_filter">
-                                        <option value='1'>Mi Profile</option>
-                                        <option value='2'>Logout</option>
-                                    </select>
-
-
-                                </div>
-                                <div class="col-3">
-                                    <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="width:60%" id="superrubro_filter">
-                                        <option value='1'>Mi Profile</option>
-                                        <option value='2'>Logout</option>
-                                    </select>
-
-                                </div>
-
-                                <div class="col-3">
-
-                                    <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="width:60%" id="rubro_filter">
-                                        <option value='1'>Mi Profile</option>
-                                        <option value='2'>Logout</option>
-                                    </select>
-
-                                </div>
-
-                                <div class="col-3">
-                                    <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="width:60%" id="marca_filter">
-                                        <option value='1'>Mi Profile</option>
-                                        <option value='2'>Logout</option>
-                                    </select>
+@section('content')
+<div class="card">
+<div class="card-body">
+<table class="table table-striped" id="tableProducto">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Código</th>
+            <th scope="col">Articulo</th>
+            <th scope="col">Marca</th>
+            <th scope="col">Rubro</th>
+            <th scope="col">Lote</th>
+            <th scope="col">Stock</th>
+            <th scope="col">img Articulo</th>
+            <th scope="col">Editar</th>
+            <th scope="col">Eliminar</th>
+        </tr>
+    </thead>
 
 
-                                </div>
-
-
-
-                                <div class="refine-datatable">
-                                    <div class="container-square" style="margin:20px;border: 20px;">
-                                        <div class="refine-group">
-                                            <div style="display:inline">
-                                                <br>
+   
+</table>
+</div>
+</div>
+@endsection
 
 
 
 
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <table id="inventario_table" style="width:100%">
-                                        <thead>
-                                            <tr class="text-bg-dark p-3">
-                                                <th>Código </th>
-                                                <th>Artículo</th>
-                                                <th>Marca</th>
-                                                <th>Super Rubro</th>
-                                                <th>Rubro</th>
-                                                <th>Lote</th>
-                                                <th>Stock Total</th>
-                                                <th>Cantidad</th>
-                                                <th>QR</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row"></th>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td><img class="imagen" src="./img/ceramicos/alberdi.webp"></td>
-                                                <td scope="col"><button type="button" class="btn btn-warning"><i class="fa-solid fa-pen"></i></button></td>
-                                                <td scope="col"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button></td>
+@section('js')
 
-                                            </tr>
-                                        </tbody>
-                                        </tbody>
-                                    </table>
-                                    <div id="qrcode"></div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-
-
-
-
-</body>
-
-</html>
-
-
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap4.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.4.1/js/responsive.bootstrap4.min.js"></script>
 <script>
-    $(document).ready(function() {
-        $('#inventario_table').DataTable({
-            "ajax": {
-                "url": "env",
-                "dataSrc": ""
-            },
-            "columns": [{
-                    "data": "ID"
-                },
-                {
-                    "data": "Codigo"
-                },
-                {
-                    "data": "Articulos"
-                },
-                {
-                    "data": "Marca"
-                },
-                {
-                    "data": "Super Rubro"
-                },
-                {
-                    "data": "Rubro"
-                },
-                {
-                    "data": "Lote"
-                },
-                {
-                    "data": "Stock Total"
-                },
-                {
-                    "data": "Almacen Talar"
-                },
-                {
-                    "data": "Almacen Outlet"
-                },
-                {
-                    "data": "Almacen Quilmes"
-                },
-                {
-                    "data": "Almacen MercadoLibre Ideko"
-                },
-                {
-                    "data": "Almacen MercadoLibre Tucson"
-                },
-                {
-                    "data": "Almacen Tigre"
-                },
-                {
-                    "data": "Almacen Bariloche"
-                },
-                {
-                    "data": "Local Pilar exhibiciones/muestras"
-                },
-                {
-                    "data": "Local ShowRoom Quilmes"
-                },
-                {
-                    "data": "Local ShowRoom Talar"
-                },
-                {
-                    "data": "Local ShowRoom outlet"
-                },
-                {
-                    "data": "Diferencia Ciclico"
-                },
-                {
-                    "data": "Almacen Mar. Venta"
-                },
-                {
-                    "data": "Mercaderia P/Devolver al Prov"
-                },
-                {
-                    "data": "Almacen Mar. Deposito"
-                },
-                {
-                    "data": "Stock Defectuoso/Fallas"
-                },
-                {
-                    "data": "Almacen Mar. Fabrica"
-                },
-                {
-                    "data": "Almacen Externo Intralog"
-                },
-                {
-                    "data": "Almacen Externo Intralog TML"
-                },
-                {
-                    "data": "Almacen Externo Intralog EE UU"
-                },
-                {
-                    "data": "Almacen Externo Mepano"
-                },
-                {
-                    "data": "Almacen Externo Paso de los Libres"
-                },
-            ]
-        });
-    });
+    $(document).ready(function () {
+    $('#tableProducto').DataTable({
+        ajax: '../ajax/data/arrays.txt',
+        responsive: true,
+        autoWidth:false,
+        "language": {
+               "lengthMenu": "mostrar" +
+                              <select class="custon-select custom-select-sm form-control-sm">
+                              <option value = '10'>10</option>
+                              <option value = '25'>25</option>
+                              <option value = '50'>50</option>
+                              <option value = '100'>100</option>
+                              <option value = '-1'>All</option>
+                              </select> +
+            "Registros por pagina",
+            "zeroRecords": "Nada encontrado - disculpa",
+            "info": "Mostrando la pagina_PAGE_ de _PAGES_",
+            "infoEmpty": "No hay registros disponibles",
+            "infoFiltered": "(Filtrado de _MAX_ Registros totales)",
+            'search':'Buscar',
+            'paginate': {
+            'next':'Siguiente',
+            'previous': 'Anterior'
+        
+            }
+        }
+    }
+    
+        
+    );
+});
 </script>
-
-</body>
-
-</html>
+@endsection

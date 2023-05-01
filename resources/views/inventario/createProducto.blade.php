@@ -21,6 +21,7 @@
   </h5>
   <div class="card-body">
   <p class="text-center">Agregar Articulos</p>
+  
     <p class="card-text">
     <form action="#">
       <label for="">Código</label>
@@ -34,10 +35,12 @@
       <br>
 
 
-      <a href="./entradas"><button class="btn btn-primary" id="nuevoProducto">
+      <a href="{{route('homeController.menuPrincipal')}}"><button class="btn btn-primary" id="nuevoProducto">
             <i class="fa-regular fa-floppy-disk"></i>
             <p>Regresar</p>
           </button></a>
+
+ 
       
         <a href="./nuevoProducto"><button class="btn btn-dark" id="nuevoProducto">
             <i class="fa-regular fa-floppy-disk"></i>
@@ -45,12 +48,35 @@
           </button></a>
       
 
-      
-      
-      
-      
     </form>
     </p>
+
+<div class="table table-responsive">
+  <table class="table table-sm table-bordered">
+    <thead>
+      <th>Código</th>
+      <th>Articulo</th>
+      <th>Lote</th>
+      <th>Cantidad</th>
+
+      
+    </thead>
+    <tbody>
+    @foreach ($datos as $item)
+
+      <tr>
+        <td>{{ $item->codigo}}</td>
+        <td>{{ $item->articulo}}</td>
+        <td>{{ $item->lote}}</td>
+        <td>{{ $item->cantidad}}</td>
+      </tr>
+
+      @endforeach
+    </tbody>
+  </table>
+</div>
+
+
   </div>
 </div>
 

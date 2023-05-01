@@ -19,10 +19,11 @@
 
 
     <div class="d-flex justify-content-center mt-4">
-        <a href="./createProducto"><button class="btn btn-primary" id="agregarArticulo"><i class="fa-solid fa-plus"></i>
+        <a href="{{route('articulos.createProducto')}}"><button class="btn btn-primary" id="agregarArticulo"><i class="fa-solid fa-plus"></i>
                 <p>Agregar Articulo</p>
             </button></a>
     </div>
+
 
 
 

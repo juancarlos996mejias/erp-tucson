@@ -12,9 +12,12 @@ class productos extends Model
     use Notifiable;
 
     
-
-    protected $fillable= [
-        'codigo','articulo','lote'
-    ];
+// tabla
+    protected $table='productos';  
+       
+  //timestamp
+  public $timestams = false;
+  //guarded
+  protected $guarded = [];  
 
 };
