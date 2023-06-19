@@ -1,198 +1,129 @@
-<!DOCTYPE html>
-<html lang="es">
+@extends('adminlte::page')
 
-<head>
-    <?php include(app_path() . "/../resources/views/template/head.php"); ?>
-</head>
+@section('title', 'MENU')
 
-<body>
+@section('content_header')
+
+@stop
+
+@section('content')
+<br>
+
+<style>
+    img {
+
+        vertical-align: middle;
+        border-style: none;
+        height: 30px;
+        width: 40px;
 
 
-    <header>
-        <?php include(app_path() . "/../resources/views/template/header.php"); ?>
-    </header>
-
-    <div class="tituloEntrada">
-        <h4>Listar Entradas</h4>
+    }
+</style>
+<div class="card">
+    <div class="card-header bg-primary">
+        <h3 class="card-title">Listar Entradas</h3>
+        <div class="card-tools">
+            <!-- Buttons, labels, and many other things can be placed here! -->
+            <!-- Here is a label for example -->
+            <span class="badge badge-secondary"><i class="fa fa-list"></i></span>
+        </div>
+        <!-- /.card-tools -->
     </div>
-    <br>
+    <!-- /.card-header -->
+    <div class="card-body">
 
-    <div class="container d-flex justify-content-start" style="height:200px">
+        <label>Fecha Inicio</label>
+        <div class="input-group mb-3">
+            <span class="input-group" id="basic-addon1"></span>
+            <input type="date" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
 
-        <div class="row">
-            <div class="col-4">
-                <div class="d-flex justify-content-around">
-                    <label>Fecha Inicio</label>
-                    <input type="date" class="form-control" id="input_listar" placeholder="Fecha Inicio" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                </div>
-            </div>
+        <label>Fecha Final</label>
+        <div class="input-group mb-3">
+            <span class="input-group" id="basic-addon1"></span>
+            <input type="date" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
 
-            <div class="col-4">
-                <div class="d-flex">
-                    <label>Fecha Final</label>
-                    <input type="date" class="form-control" id="input_listar" placeholder="Fecha Final" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                </div>
-            </div>
+        <div class="col-4">
+            <button type="button" class="btn btn-secondary">Buscar</button>
+        </div>
+        <br>
+        <label>Fecha de Registro</label>
+        <div class="input-group mb-3">
+            <span class="input-group" id="basic-addon1"></span>
+            <input type="date" class="form-control" placeholder="Fecha de Registro" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
 
-            <div class="col-4">
-                <button type="button" class="btn btn-secondary">Buscar</button>
-            </div>
+        <div class="col-2">
+            <button type="button" class="btn btn-danger">Eliminar</button>
+        </div>
 
-
-
-
-
-            <div class="col-4">
-                <div class="d-flex">
-                    <input type="text" class="form-control" id="input_listar" placeholder="Fecha de Registro" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    <div class="col-2">
-                        <button type="button" class="btn btn-secondary">Buscar</button>
-                    </div>
-                </div>
-            </div>
-
+        <div class="d-flex justify-content-end">
             <div class="col-2">
-                <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can" id="eliminar"></i></button>
-            </div>
-
-
-
-    
-            <div class="d-flex justufy-content-start row">
-                <div class="col-2">
-                    <div class="d-flex">
-                        <button type="button" class="btn btn-success">Descargar Excel</button>
-                    </div>
+                <div class="d-flex">
+                    <button type="button" class="btn btn-success">Descargar <img src="../img/excel.png" id="excel"></button>
                 </div>
-
-
             </div>
 
         </div>
+        <!-- /.card-body -->
 
-    </div>
-    </div>
-    </div>
-
-    <hr>
-
-
-
-    <div class="container py-5">
-        <div class="row">
-
-            <table class="table table-striped table-hover" id="datatableNew" style="width:100%">
-                <thead>
-                    <tr class="table-dark">
-                        <th scope="col">Fecha de Registro</th>
-                        <th scope="col">N° de Documento</th>
-                        <th scope="col">Usuario Registrado</th>
-                        <th scope="col">Provedor</th>
-                        <th scope="col">Monto Total</th>
-                        <th scope="col">Código de Producto</th>
-                        <th scope="col">Articulo</th>
-                        <th scope="col">Img Articulo</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">25/11/2022</th>
-                        <td>95934567</td>
-                        <td>Admin</td>
-                        <td>Ilva</td>
-                        <td>2.000.000</td>
-                        <td>#CO NE 45X90</td>
-                        <td>ILVA PORC.45X90 COMPACT NEUTRAL</td>
-                        <td><img class="imagen" src="./img/ceramicos/piazza-bacha.jpg"></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">25/11/2022</th>
-                        <td>95934567</td>
-                        <td>Admin</td>
-                        <td>Ilva</td>
-                        <td>2.000.000</td>
-                        <td>#CO NE 45X90</td>
-                        <td>ILVA PORC.45X90 COMPACT NEUTRAL</td>
-                        <td><img class="imagen" src="./img/ceramicos/klaukol-verde.jpg"></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">25/11/2022</th>
-                        <td>95934567</td>
-                        <td>Admin</td>
-                        <td>Ilva</td>
-                        <td>2.000.000</td>
-                        <td>#CO NE 45X90</td>
-                        <td>ILVA PORC.45X90 COMPACT NEUTRAL</td>
-                        <td><img class="imagen" src="./img/ceramicos/murano1.jpg"></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">25/11/2022</th>
-                        <td>95934567</td>
-                        <td>Admin</td>
-                        <td>Ilva</td>
-                        <td>2.000.000</td>
-                        <td>#CO NE 45X90</td>
-                        <td>ILVA PORC.45X90 COMPACT NEUTRAL</td>
-                        <td><img class="imagen" src="./img/ceramicos/black.webp"></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">25/11/2022</th>
-                        <td>95934567</td>
-                        <td>Admin</td>
-                        <td>Ilva</td>
-                        <td>2.000.000</td>
-                        <td>#CO NE 45X90</td>
-                        <td>ILVA PORC.45X90 COMPACT NEUTRAL</td>
-                        <td><img class="imagen" src="./img/ceramicos/klaukol-red.jpg"></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">25/11/2022</th>
-                        <td>95934567</td>
-                        <td>Admin</td>
-                        <td>Ilva</td>
-                        <td>2.000.000</td>
-                        <td>#CO NE 45X90</td>
-                        <td>ILVA PORC.45X90 COMPACT NEUTRAL</td>
-                        <td><img class="imagen" src="./img/ceramicos/klaukol-red.jpg"></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">25/11/2022</th>
-                        <td>95934567</td>
-                        <td>Admin</td>
-                        <td>Ilva</td>
-                        <td>2.000.000</td>
-                        <td>#CO NE 45X90</td>
-                        <td>ILVA PORC.45X90 COMPACT NEUTRAL</td>
-                        <td><img class="imagen" src="./img/ceramicos/alberdi.webp"></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">25/11/2022</th>
-                        <td>95934567</td>
-                        <td>Admin</td>
-                        <td>Ilva</td>
-                        <td>2.000.000</td>
-                        <td>#CO NE 45X90</td>
-                        <td>ILVA PORC.45X90 COMPACT NEUTRAL</td>
-                        <td><img class="imagen" src="./img/ceramicos/klaukol-verde.jpg"></td>
-                    </tr>
-
-
-
-
-            </table>
-
-        </div>
+        <!-- /.card-footer -->
     </div>
 
+</div>
 
 
 
-    <script>
-        $(document).ready(function() {
-            $('#datatableNew').DataTable();
-        });
-    </script>
+<table id="datatableNew mt-3" class="table table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th>Fecha de Registro</th>
+                <th>N° de Documento</th>
+                <th>Usuario Registrado</th>
+                <th>Provedor</th>
+                <th>Monto Total</th>
+                <th>Código de Producto</th>
+                <th>Código de Producto</th>
+                <th>Código de Producto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011-04-25</td>
+                <td>$320,800</td>
+                <td>$320,800</td>
+                <td>$320,800</td>
+            </tr>
+        </tbody>
+    </table>
 
-</body>
+@stop
 
-</html>
+
+
+<!-- /.card -->
+
+
+@section('css')
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
+@stop
+
+@section('js')
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#datatableNew').DataTable();
+    });
+</script>
+@stop

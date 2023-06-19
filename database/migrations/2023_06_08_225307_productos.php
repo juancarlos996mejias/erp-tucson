@@ -6,22 +6,23 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
+
+
     /**
      * Run the migrations.
      *
      * @return void
      */
-    public function up()
+     public function up()
     {
-        Schema::create('masterProductos', function (Blueprint $table) {
+        Schema::create('productos', function (Blueprint $table) {
             $table->id();
             $table->string('codigo');
             $table->string('articulo');
-            $table->string('marca');
-            $table->string('superRubro');
-            $table->string('rubro');
             $table->string('lote');
-            $table->string('stock_total');
+            $table->string('marca');
+            $table->string('rubro');
+            $table->string('stock');
             $table->timestamps();
         });
     }

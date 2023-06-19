@@ -22,8 +22,16 @@ class ArticulosController extends Controller
         return view('inventario.createProducto',compact('datos'));
     }
 
+    
+
+    public function listar ()
+    {
+        $datos = Articulos::all();
+        return view('inventario.entradasListar',compact('datos'));
+       } 
+
    
-    public function store(Request $request)
+    public function store (Request $request)
     {
         //guarda los datos en la BD
     }

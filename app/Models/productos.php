@@ -13,7 +13,14 @@ class productos extends Model
 
     
 // tabla
-    protected $table='productos';  
+    protected $table='productos';
+    protected $fillable = [
+      'id','codigo','articulo','lote','marca','rubro','stock'
+    ];  
+
+
+
+   
        
   //timestamp
   public $timestams = false;

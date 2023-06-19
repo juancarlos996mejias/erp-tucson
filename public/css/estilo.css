@@ -1,7 +1,7 @@
 
 
 body{
-    background:  #EFF5F5;
+    background:  #080202;
     
 }
 .dashboarContenedor{
@@ -388,6 +388,14 @@ justify-content: center;
     color:#ffffff;     
 }
 
+#headerNew img{
+    height: 35px;
+}
+
+#headerBoton {
+    height: 75px; 
+}
+
 
 
 .fecha_registro{
@@ -617,20 +625,21 @@ margin-left: 390px;
 
 #navBar{
     background: #393E46;
+    
 }
 
 #bgFooter{
-    background: #393E46; 
+    background: #181818; 
     height: 90px;  
 }
 
 .homeBg{
-    background-color:#EFF5F5;
+    background-color:#080202;
    
 }
 
 #bgfooterLogin{
-    background: #393E46;  
+    background: #181818;  
     position: fixed; 
     bottom: 0;
     width: 100%;
@@ -641,12 +650,13 @@ margin-left: 390px;
 
 
 #bgHome{
-    margin-top: 90px;
+    margin-top: 110px;
 }
 
 .tituloLogo{
     font-family: 'Roboto Mono', monospace; 
     font-size: 20px;
+    color: #d8e2dc;
 }
 
 .form-label{

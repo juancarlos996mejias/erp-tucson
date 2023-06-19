@@ -1,3 +1,5 @@
+<h1>aqui se edita productos</h1>
+
 @extends('adminlte::page')
 
 @section('title', 'NUEVO')
@@ -20,7 +22,7 @@
     </div>
   </h5>
   <div class="card-body">
-    <p class="text-center">Agregar Articulos</p>
+    <p class="text-center">Actualizar Articulos</p>
 
     <p class="card-text">
     <form action="#">
@@ -43,8 +45,8 @@
           <p>Regresar</p>
         </button></a>
 
-      <button class="btn btn-dark" id="nuevoProducto">
-        <p>Guardar</p>
+      <button class="btn btn-warning" id="nuevoProducto">
+        <p>Actualizar</p>
       </button></a>
 
      

@@ -1,12 +1,17 @@
 <?php
 
 use App\Http\Controllers\ArticulosController;
+use App\Http\Controllers\DatatableController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\homeController;
 use App\Http\Controllers\MasterProductosController;
+use App\Http\Controllers\productController;
 use App\Http\Controllers\productosController;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Request;
 
 
 
@@ -21,35 +26,39 @@ Route::post('/login',[LoginController::class,'login']);
 
 
 
-Route::get('inventario/productos',[productosController::class,'productos']);
 
-Route::resource('inventario/productos',productosController::class);
+
+
+
+
+//route create
+
+//route edit
+Route::get('/edit',[MasterProductosController::class,'edit'])->name('masterProductos.edit');
+//route update
+Route::get('/update',[MasterProductosController::class,'update'])->name('masterProductos.update');
+
+Route::get('/createProducto',[ArticulosController::class,'create'])->name('articulos.createProducto');
+
+Route::get('/entradasListar',[ArticulosController::class,'listar'])->name('articulos.entradasListar');
+
+
 
 
 
 Route::get('/',[HomeController::class,'index'])->name('homeController.index');
 // menu principal
 Route::get('/menu',[homeController::class,'menu'])->name('homeController.menuPrincipal');
-//route create
-Route::get('/createProducto',[MasterProductosController::class,'createProducto'])->name('masterProductos.createProducto');
-//route edit
-Route::get('/edit',[MasterProductosController::class,'edit'])->name('masterProductos.edit');
-//route update
-Route::get('/update',[MasterProductosController::class,'update'])->name('masterProductos.update');
 
-Route::get('/productos',[ProductosController::class,'productos'])->name('ProductosController.productos');
+Route::get('/productos',[DatatableController::class,'productos'])->name('inventario.productos');
 
-Route::get('/createProducto',[ArticulosController::class,'create'])->name('articulos.createProducto');
+Route::get('/product',[ProductController::class,'product'])->name('inventario.product'); 
 
-Route::get('/editProducto',[ArticulosController::class,'editProducto'])->name('articulos.editProducto');
+Route::get('/createProducto',[ProductController::class,'createProducto'])->name('inventario.createProducto');
 
-Route::get('/datatable/producto',[DatatableController::class,'producto'])->name('datatable.producto');
+Route::get('/editProducto',[ProductController::class,'editProducto'])->name('inventario.editProducto');
 
-
-
-
-
-
+Route::get('/deleteProducto',[ProductController::class,'deleteProducto'])->name('inventario.deleteProducto');
 
 
 Route::get('/login', function () {
@@ -59,11 +68,18 @@ Route::get('/login', function () {
 
 
 
+
+
+
+
+
 //Inicio de Rutas de modulo de inventario
 
 Route::get('/inventarioNew', function () {
     return view('inventario.inventarioNew');
 });
+
+
 
 
 Route::get('/menu_inventario', function () {
@@ -100,13 +116,7 @@ Route::get('/nuevoProducto', function () {
     return view('inventario.nuevoProducto');
 });
 
-Route::get('/entradasListar', function () {
-    return view('inventario.entradasListar');
-});
 
-Route::get('/entradasBuscar', function () {
-    return view('inventario.entradasBuscar');
-});
 
 
 //inventario_salidas

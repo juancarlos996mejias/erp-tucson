@@ -251,7 +251,10 @@ margin-bottom: 80px;
 .iconPrincipal p{
     height: 60px;
     margin-left: 40px;
+    
 }
+
+
 
 .container{
     
@@ -347,6 +350,10 @@ margin-left: 200px;
 .table.dataTable td {
     font-size: 1em;
   }
+
+#excel img{
+    background-color: black;
+}
 
 
 

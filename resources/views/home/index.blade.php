@@ -15,9 +15,9 @@
 
 
         <div class="d-flex justify-content-center align-items-center"id="bgHome">
-          <img src="./img/logoBlue.png" class="img-fluid" style="width:100% hight 500px"alt="Sample image">
+          <img src="./img/logoBlue.png" class="img-fluid" style="width:100% hight 700px"alt="Sample image">
           <div class="tituloLogo">
-          <H1>Tucson System</H1>
+          <H2>SYSTEM</H2>
           </div>
         </div>
 

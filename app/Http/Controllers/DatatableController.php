@@ -1,18 +1,18 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Database\Migrations\Migration;
 use Illuminate\Http\Request;
-use App\models\productos;
-
+use Illuminate\Support\Facades\Auth;
+use App\Models\productos;
+use Datatable;
 
 class DatatableController extends Controller
 {
     public function productos(){
-        $productos = Productos::select('id','Código','Articulo','Marca','Rubro','Lote','Stock')->get();
+
+        $productos = Productos::select('id','codigo','articulo','lote','marca','rubro','stock','acciones')->get();
+        return datatables()->of($productos)->toJson();
         
-        return datatables()->of(productos::all())->toJson();
     }
-
-    
 }
-

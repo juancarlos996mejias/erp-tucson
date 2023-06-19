@@ -9,11 +9,13 @@
 
 
 
-<body>
-    <header>
-        <?php include(app_path() . "/../resources/views/template/header.php"); ?>
 
-    </header>
+<body>
+<header>
+    <?php
+    include(app_path() . "/../resources/views/template/header.php");
+    ?>
+  </header>
 
     
     <br>
@@ -47,7 +49,7 @@
                         <div class="d-flex justify-content-between">
                             <p>Nuevo, Listar, Buscar</p>
                         </div>
-                        <button class="btn btn-dark" id="power" data-bs-toggle="modal" data-bs-target="#mi-modalEntrada"><i class="fa-solid fa-door-open"></i></button>
+                        <button class="btn btn-dark" id="power" data-bs-toggle="modal" data-bs-target="#mi-modalSalida"><i class="fa-solid fa-door-open"></i></button>
                     </div>
                 </div>
             </div>
@@ -126,9 +128,9 @@
                 </div>
 
                 <div class="modal-body" id="modalBody">
-                <a href="./entradas"><button type="button" class="btn" data-bs-dismiss="modal">Nuevo</button></a>
+                <a href="./salidasNuevo"><button type="button" class="btn" data-bs-dismiss="modal">Historial</button></a>
+                <a href="./createProducto"><button type="button" class="btn" data-bs-dismiss="modal">Crear</button></a>
                 <a href="./entradasListar"><button type="button" class="btn">Listar </button></a>
-                <a href="./entradasBuscar"><button type="button" class="btn">Buscar</button></a>
                 </div>
                 <div class="modal-footer" id="modalFooter">
                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
@@ -174,7 +176,7 @@
                 </div>
 
                 <div class="modal-body" id="modalBody">
-                <a href="./productos"><button type="button" class="btn" data-bs-dismiss="modal">Nuevo</button></a>
+                <a href="{{route(product)}}"><button type="button" class="btn" data-bs-dismiss="modal">Nuevo</button></a>
                 <a href="./productos"><button type="button" class="btn">Cargar </button></a>
                 <a href="./productos"><button type="button" class="btn">Listar</button></a>
                 </div>

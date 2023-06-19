@@ -12,12 +12,7 @@ class MasterProductosController extends Controller
 
   
 //formulario donde vamos a crear datos
-    public function createProducto()
-    {
-        
-        
-        return view('inventario.createProducto');
-    }
+   
 
     public function store(Request $request)
     {
@@ -26,7 +21,7 @@ class MasterProductosController extends Controller
 
     public function show(MasterProductos $masterProductos)
     {
-        //para obtener registros de tablas
+        //para obtener registros detallado de tablas
     }
 
     public function edit(MasterProductos $masterProductos)

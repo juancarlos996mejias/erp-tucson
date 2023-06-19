@@ -12,6 +12,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/85fec555d4.js" crossorigin="anonymous"></script>
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
@@ -76,5 +77,19 @@
             @yield('content')
         </main>
     </div>
+@stack ('js')
+
+<script>
+    livewire.on('alert',function(message){
+        swal.fire(
+            'good job',
+            message,
+            'success',
+        )
+    })
+</script>
+
+
+
 </body>
 </html>
