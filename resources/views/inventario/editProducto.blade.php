@@ -1,4 +1,4 @@
-<h1>aqui se edita productos</h1>
+
 
 @extends('adminlte::page')
 
@@ -17,12 +17,13 @@
 <div class="card">
   <h5 class="card-header bg-primary">
     <div class="iconUsuario">
-      <img src="./img/add-button.png">
+      <img src="./img/pencil.png">
+      <div><p>Editar Ariculos</p></div>
 
     </div>
   </h5>
   <div class="card-body">
-    <p class="text-center">Actualizar Articulos</p>
+    
 
     <p class="card-text">
     <form action="#">
@@ -42,11 +43,11 @@
 
 
       <a href="{{route('inventario.product')}}"class="btn btn-info" id="nuevoProducto">
-          <p>Regresar</p>
+      <span class="fas fa-undo-alt"></span>  Regresar
         </button></a>
 
       <button class="btn btn-warning" id="nuevoProducto">
-        <p>Actualizar</p>
+      <span class="fas fa-user-edit"></span>  Actualizar
       </button></a>
 
      

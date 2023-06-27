@@ -1,29 +1,20 @@
-<!DOCTYPE html>
-<html lang="es">
+@extends('adminlte::page')
+
+@section('title', 'MENU')
+
+@section('content_header')
+
+<div class="iconPrincipal">
+  <img src="./img/aplicacion.png">
+  <p>Menu Principal</p>
+</div>
+@stop
+
+@section('content')
 
 
 
-<head>
-  <?php include(app_path() . "/../resources/views/template/head.php"); ?>
-</head>
-
-
-
-
-<body>
-<header>
-    <?php
-    include(app_path() . "/../resources/views/template/header.php");
-    ?>
-  </header>
-
-    
-    <br>
-
-
-  
-
-    <div class="containerInventario mt-4">
+<div class="containerInventario mt-4">
         <div class="row d-flex justify-content-around">
 
             <div class="col-2 mt-4">
@@ -270,13 +261,18 @@
     <script src="resources/inventarioNew.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="resources/sweetAlert.js"></script>
+@stop
 
+@section('css')
+<link rel="stylesheet" href="/css/admin_custom.css">
 
+@stop
 
-
-
-
-
-</body>
-
-</html>
+@section('js')
+<script src="resources/inventarioNew.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="resources/sweetAlert.js"></script>
+<script>
+  console.log('Hi!');
+</script>
+@stop

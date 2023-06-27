@@ -10,10 +10,60 @@
 @stop
 
 @section('content')
-<br><br>
-<div class="alert alert-danger" role="alert">
-  Estas seguro de ELIMINAR este registro?
-</div>
+<br>
+<br>
+
+<div class="card">
+  <h5 class="card-header bg-primary">
+    <div class="iconUsuario">
+      <img src="./img/delete.png">
+      <div><p>Eliminar Artículo</p></div>
+
+    </div>
+  </h5>
+  <div class="card-body">
+    
+
+    <p class="card-text">
+    <form action="#">
+      <label for="">Código</label>
+      <input type="text" name="codigo" class="form-control" required>
+      <label for="">Articulo</label>
+      <input type="text" name="materno" class="form-control" required>
+      <label for="">Lote</label>
+      <input type="text" name="lote" class="form-control" required>
+      <label for="">Almacen</label>
+      <input type="text" name="almacen" class="form-control" required>
+      <label for="">Cantidad/m2</label>
+      <input type="text" name="cantidad" class="form-control" required>
+      <br>
+
+      
+
+
+      <a href="{{route('inventario.product')}}"class="btn btn-info" id="nuevoProducto">
+      <span class="fas fa-undo-alt"></span>  Regresar
+        </button></a>
+
+      <button class="btn btn-danger" id="nuevoProducto">
+        <span class="fa fa fa-trash"></span>   Eliminar
+      </button></a>
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!--div class="row" style="heightx:400px"-->
 @stop
@@ -53,5 +103,5 @@
     }
   })
 </script>
-@end push
+
 @stop

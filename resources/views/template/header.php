@@ -30,7 +30,7 @@
                         <a class="nav-link" aria-current="page" href="./menu_principal">MENU</a>
                     </li>
                 <?php } else { ?>
-                    <li class="nav-item"><a class="nav-link" id=headerNew href="./login"><img src="./img/power-button.png"></a></li>
+                    <li class="nav-item"><a class="nav-link" id=headerNew href="./login"><img src="./img/casa.png"></a></li>
                 <?php } ?>
 
             </ul>

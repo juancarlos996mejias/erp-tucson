@@ -11,17 +11,16 @@
 
 @section('content_header')
 
-<div class="iconPrincipal">
-    <i class="fa fa-boxes"></i>
-    
-    <p>Productos</p>
-</div>
+
 
 @stop
 
 @section('content')
+<br>
+<br>
 <div>
-    <a href="./createProducto"><button type="button" class="btn btn-primary">Agregar Producto</button></a>
+    <a href="./createProducto"><button type="button" class="btn btn-primary btn-lg">
+        <span class="fa fa-plus"></span>   Agregar Producto</button></a>
 </div>
 
 
@@ -37,8 +36,8 @@
             <th scope="col">Marca</th>
             <th scope="col">Rubro</th>
             <th scope="col">Stock</th>
-            <th scope="col">Acciones</th>
-            <th scope="col"></th>
+            <th scope="col">Editar</th>
+            <th scope="col">Eliminar</th>
            
             
             
@@ -76,8 +75,10 @@
                 {data:'marca'},
                 {data:'rubro'},
                 {data:'stock'},
-                {"defaultContent":"<button type='button' class='editar btn btn-warning'>Editar</button>"},
-                {"defaultContent":"<button type='button' class='eliminar btn btn-danger'>Eliminar</button>"},
+                {"defaultContent":'<button class="btn btn-warning btn-lg"><span class="fas fa-user-edit"></span></button>'},
+                {"defaultContent":'<button class="btn btn-danger btn-lg"><span class="fa fa-trash can"></span></button>'},
+                    
+                
                   
             ],
          

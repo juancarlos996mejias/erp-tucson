@@ -15,15 +15,19 @@
 <div class="card">
   <h5 class="card-header bg-primary">
     <div class="iconUsuario">
-      <img src="./img/add-button.png">
+      <img src="./img/package.png">
+      <div><p>Agregar Artículo</p></div>
+      
+      
 
     </div>
   </h5>
   <div class="card-body">
-    <p class="text-center">Agregar Articulos</p>
+    
 
     <p class="card-text">
-    <form action="#">
+    <form action="{{ route('inventario.store')}}" method="POST">
+@csrf
       <label for="">Código</label>
       <input type="text" name="codigo" class="form-control" required>
       <label for="">Articulo</label>
@@ -37,19 +41,17 @@
       <br>
 
       
-
-
       <a href="{{route('inventario.product')}}"class="btn btn-info" id="nuevoProducto">
-          <p>Regresar</p>
+          <span class="fas fa-undo-alt"></span>  Regresar
         </button></a>
 
       <button class="btn btn-dark" id="nuevoProducto">
-        <p>Guardar</p>
+      <span class="fa fa-user-plus"></span>  Crear
       </button></a>
 
      
 
-
+      
      
 
 

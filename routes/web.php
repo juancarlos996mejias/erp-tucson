@@ -54,7 +54,13 @@ Route::get('/productos',[DatatableController::class,'productos'])->name('inventa
 
 Route::get('/product',[ProductController::class,'product'])->name('inventario.product'); 
 
+Route::get('/inventarioNew',[ProductController::class,'inventarioNew'])->name('inventario.inventarioNew'); 
+
+//Route::get('/inventory',[ProductController::class,'inventory'])->name('inventario.inventory'); 
+
 Route::get('/createProducto',[ProductController::class,'createProducto'])->name('inventario.createProducto');
+
+//Route::post('/store',[ProductController::class,'store'])->name('inventario.store');
 
 Route::get('/editProducto',[ProductController::class,'editProducto'])->name('inventario.editProducto');
 
@@ -75,9 +81,7 @@ Route::get('/login', function () {
 
 //Inicio de Rutas de modulo de inventario
 
-Route::get('/inventarioNew', function () {
-    return view('inventario.inventarioNew');
-});
+
 
 
 
