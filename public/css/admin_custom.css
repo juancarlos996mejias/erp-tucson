@@ -310,6 +310,40 @@ justify-content: center;
 margin-left: 200px;
 }
 
+#inventario2{
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;  
+    
+    
+}
+
+#header2{
+    color: #222831;
+    background:#EFEFEF; 
+
+}
+
+#footer2{
+    background:#3D3C42; 
+   
+}
+
+#body2{
+    padding: 50px;
+    background: #2F58CD;  
+}
+
+.card-img-top2{
+    height: 50px;
+}
+
+.fuente {
+    color:#D8D9CF;
+    height: 10px;
+}
+
+
 
 #nuevoProducto{
     height: 40px;

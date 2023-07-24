@@ -19,20 +19,23 @@ class ProductController extends Controller
          return view('inventario.product');
         } 
 
-        public function createProducto(){
+        public function productos (){
+$productos = productos::select('id','codigo','articulo','lote','marca','rubro','stock')->get();
+
+                return $productos();
+               } 
+
+
+
+
+        public function createProducto(Request $request){
         return view('inventario.createProducto');
         }
 
-        public function store(request $request){
-                $productos = new productos();
-                $productos->codigo = $request->post('codigo');
-                $productos->articulo = $request->post('articulo');
-                $productos->lote = $request->post('lote');
-                $productos->almacen = $request->post('almacen');
-                $productos->Cantidad = $request->post('cantidad');
-                $productos->save();
 
-                return redirect()->route("inventario.product")->with("success","Agregado con exito!");
+
+        public function store(){
+            
 
 
                 }

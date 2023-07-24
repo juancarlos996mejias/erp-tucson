@@ -4,7 +4,7 @@
 
         </div>
         <div class="logo" id="logoTucson">
-        <a class="navbar-brand" href="menuPrincipal"id=headerBoton><img src="./img/TUCSON-LOGO.png" alt="" style="width: 50%;"></a>
+        <a class="navbar-brand" href="menuPrincipal"id=headerBoton><img src="./img/logoBlue.png" alt="" style="width: 40%;"></a>
             
         </div>
 

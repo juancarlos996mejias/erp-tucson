@@ -11,8 +11,10 @@ class DatatableController extends Controller
 {
     public function productos(){
 
-        $productos = Productos::select('id','codigo','articulo','lote','marca','rubro','stock','acciones')->get();
+        $productos = Productos::select('id','codigo','articulo','lote','marca','rubro','stock')->get();
+
         return datatables()->of($productos)->toJson();
+        
         
     }
 }

@@ -1,212 +1,163 @@
-<!DOCTYPE html>
-<html lang="es">
+@extends('adminlte::page')
 
-<head>
-    <?php include(app_path() . "/../resources/views/template/head.php"); ?>
-</head>
+@section('title', 'MENU')
 
-<body>
+@section('content_header')
+
+<div class="iconPrincipal">
+    <img src="./img/aplicacion.png">
+    <p>Menu Principal</p>
+</div>
+@stop
+
+@section('content')
 
 
-    <header>
-        <?php include(app_path() . "/../resources/views/template/header.php"); ?>
-    </header>
+
+<div class=" container justify-content-center" id="inventario2">
 
 
-    <br>
-    <div class="tituloEntrada">
-        <h4>AGREGAR SALIDA</h4>
+
+    <a href="./product"id="#mi-modalEntrada">
+        <div class="col mt-4">
+            <div class="card " style="max-width: 20rem;" id="principal">
+                <div class="card-header" id="header2">ENTRADAS</div>
+                <div class="card-body" id="body2">
+                    <img src="./img/freeEntrada.png" class="card-img-top2" />
+                </div>
+    </a>
+    <div class="card-footer" id="footer2">
+        <p class="fuente">Nuevo, Listar, Buscar</p>
     </div>
-    <br>
-
-    <div class="container">
-
-        <div class="row">
+</div>
 
 
-            <div class="col-4">
-                <label>N° de Documento</label>
-                <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
-            </div>
 
-            <div class="col-4">
-                <label>Fecha de Registro</label>
-                <input type="date" class="form-control" placeholder="Fecha de Registro:" aria-label="Recipient's username" aria-describedby="basic-addon2">
-            </div>
+<button class="btn btn-dark" id="power" data-bs-toggle="modal" data-bs-target="#mi-modalEntrada"><i class="fa-solid fa-right-to-bracket"></i></button>
 
-
+<a href="./ventas">
+    <div class="card " style="max-width: 20rem;" id="principal">
+        <div class="card-header" id="header2">SALIDAS</div>
+        <div class="card-body" id="body2">
+            <img src="./img/freeSalida.png" class="card-img-top2" />
         </div>
+</a>
+<div class="card-footer" id="footer2">
+    <p class="fuente">Nuevo, Listar, Buscar</p>
+</div>
+</div>
 
+<br>
 
-
-        <br>
-
-        <div class="d-flex justify-content-start containerSalida">
-            <div class="row">
-                <div class="col-4">
-                    <label>Documento Cliente</label>
-                    <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                </div>
-
-                <div class="col-4">
-                    <label>Nombre del Cliente</label>
-                    <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                </div>
-                
-                <div class="col-4" id="buscarCliente">
-                <label></label>
-                <div class="col">
-                    <button type="button" class="btn btn-secondary">Buscar</button>
-                    
-                </div>
-            </div>
+<a href="./product">
+    <div class="card " style="max-width: 20rem;" id="principal">
+        <div class="card-header" id="header2">PRODUCTOS</div>
+        <div class="card-body" id="body2">
+            <img src="./img/productosfree.png" class="card-img-top2" />
         </div>
-    </div>
+</a>
+<div class="card-footer" id="footer2">
+<p class="fuente">Listar</p>
+</div>
+</div>
+</div>
 
-    
-    
 
-    <div class="d-flex justify-content-start containerSalida">
-        <div class="row">
-            <div class="col-4">
-                <label>Código Producto</label>
-                <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
+
+<a href="./menu_inventario">
+    <div class="col mt-4">
+        <div class="card " style="max-width: 20rem;" id="principal">
+            <div class="card-header" id="header2">TOMA DE INVENTARIO</div>
+            <div class="card-body" id="body2">
+                <img src="./img/freeAlmacen.png" class="card-img-top2" />
             </div>
+</a>
+<div class="card-footer" id="footer2">
+    <p class="fuente">Nuevo, Listar, Buscar</p>
+</div>
+</div>
 
-            <div class="col-2">
-                <label>Articulos</label>
-                <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
+
+
+<a href="./menu_inventario">
+    <div class="col mt-4">
+        <div class="card " style="max-width: 20rem;" id="principal">
+            <div class="card-header" id="header2">MOVIMIENTOS</div>
+            <div class="card-body" id="body2">
+                <img src="./img/movimientosfree.png" class="card-img-top2" />
             </div>
+</a>
+<div class="card-footer" id="footer2">
+    <p class="fuente">Nuevo, Listar, Buscar</p>
+</div>
+</div>
 
-            <div class="col-2" id="buscarArticulos">
 
-                <label></label>
-                <div class="col">
-                    <button type="button" class="btn btn-secondary">Buscar</button>
+
+<a href="./dashboard">
+    <div class="col mt-4">
+        <div class="card " style="max-width: 20rem;" id="principal">
+            <div class="card-header" id="header2">CONFIGURACION</div>
+            <div class="card-body" id="body2">
+                <img src="./img/freeConfiguracion.png" class="card-img-top2" />
+            </div>
+</a>
+<div class="card-footer" id="footer2">
+    <p class="fuente">Nuevo, Listar, Buscar</p>
+</div>
+</div>
+
+
+</div>
+
+
+-------modal-------------
+
+<div class="modal fade" id="mi-modalEntrada" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content" id="modalContent">
+
+                <div class="modal-header" id="modalHeader">
+                    <h5 class="modal-title">Opciones</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                </div>
+
+                <div class="modal-body" id="modalBody">
+                <a href="./salidasNuevo"><button type="button" class="btn" data-bs-dismiss="modal">Historial</button></a>
+                <a href="./createProducto"><button type="button" class="btn" data-bs-dismiss="modal">Crear</button></a>
+                <a href="./entradasListar"><button type="button" class="btn">Listar </button></a>
+                </div>
+                <div class="modal-footer" id="modalFooter">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
-
-            <div class="col-2">
-                <label>Stock</label>
-                <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
-            </div>
-            <div class="col-2">
-                <label></label>
-                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                </select>
-            </div>
-
-        </div>
-    </div>
-
-
-
-
-    <br>
-    <br>
-    <br>
-    <span class="placeholder col-12 bg-secondary"></span>
-    <div class="container">
-
-        <div class="row">
-
-
-            <table class=" table table-dark table-hover">
-                <thead>
-                    <tr class="table-primary">
-                        <th scope="col">Código</th>
-                        <th scope="col">Descripción</th>
-                        <th scope="col">Cantidad</th>
-                        <th scope="col">Precio Venta</th>
-                        <th scope="col">Sub Total</th>
-
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">000001</th>
-                        <td>Rosseto 57x57</td>
-                        <td>24JK</td>
-                        <td>420.000<img class="imagen" src=""></td>
-                        <td><img class="imagen" src=""></td>
-                    </tr>
-                    <tr>
-                        <th scope="row"></th>
-                        <td></td>
-                        <td></td>
-                        <td><img class="imagen" src=""></td>
-                        <td><img class="imagen" src=""></td>
-                    </tr>
-                    <tr>
-                        <th scope="row"></th>
-                        <td colspan=""></td>
-                        <td></td>
-                        <td><img class="imagen" src=""></td>
-                        <td><img class="imagen" src=""></td>
-                    </tr>
-                    <tr>
-                        <th scope="row"></th>
-                        <td colspan=""></td>
-                        <td></td>
-                        <td><img class="imagen" src=""></td>
-                        <td><img class="imagen" src=""></td>
-                    </tr>
-                    <tr>
-                        <th scope="row"></th>
-                        <td colspan=""></td>
-                        <td></td>
-                        <td><img class="imagen" src=""></td>
-                        <td><img class="imagen" src=""></td>
-                    </tr>
-                    <tr>
-                        <th scope="row"></th>
-                        <td colspan=""></td>
-                        <td></td>
-                        <td><img class="imagen" src=""></td>
-                        <td><img class="imagen" src=""></td>
-                    </tr>
-                    <tr>
-                        <th scope="row"></th>
-                        <td colspan=""></td>
-                        <td></td>
-                        <td><img class="imagen" src=""></td>
-                        <td><img class="imagen" src=""></td>
-                    </tr>
-
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="total">
-                <h4>Total:</h4>
-            </div>
-
-
-            <div class="container" id="contenedorGuardar">
-                <div class="row">
-                    <div class="d-flex justify-content-start">
-                        <i class="fa-regular fa-floppy-disk" id="guardar"></i>
-                        <button type="button" class="btn btn-success" id="botonCargar"></button>
-                        
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
-
-    <br>
-    <br>
+    </div>
 
 
 
 
 
 
-</body>
 
-</html>
+
+
+
+
+
+
+
+
+
+@stop
+
+@section('css')
+<link rel="stylesheet" href="/css/admin_custom.css">
+@stop
+
+@section('js')
+<script>
+    console.log('Hi!');
+</script>
+@stop

@@ -15,7 +15,7 @@ class productos extends Model
 // tabla
     protected $table='productos';
     protected $fillable = [
-      'id','codigo','articulo','lote','marca','rubro','stock'
+      'id','codigo','articulo','lote','marca','rubro','stock','editar','eliminar',
     ];  
 
 

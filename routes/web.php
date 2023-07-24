@@ -60,7 +60,7 @@ Route::get('/inventarioNew',[ProductController::class,'inventarioNew'])->name('i
 
 Route::get('/createProducto',[ProductController::class,'createProducto'])->name('inventario.createProducto');
 
-//Route::post('/store',[ProductController::class,'store'])->name('inventario.store');
+Route::post('/store',[ProductController::class,'store'])->name('inventario.store');
 
 Route::get('/editProducto',[ProductController::class,'editProducto'])->name('inventario.editProducto');
 

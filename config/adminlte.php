@@ -15,7 +15,7 @@ return [
     */
 
     'title' => '',
-    'title_prefix' => 'ERP TUCSON |',
+    'title_prefix' => ' TUCSON |',
     'title_postfix' => '',
 
     /*
