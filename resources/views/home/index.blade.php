@@ -19,8 +19,9 @@
           <div class="tituloLogo">
           
           </div>
+          
         </div>
-
+        
         
 
         <footer class="py-4 mt-4"id="bgfooterLogin">
